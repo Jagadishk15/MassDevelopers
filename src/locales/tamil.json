@@ -1,0 +1,976 @@
+{
+  "5000": {
+    "name": "sadf asdf",
+    "storeid": "Display Store Code",
+    "storename": "Store Name",
+    "inventorymanagedat": "Inventory Managed at",
+    "Branch": "Branch",
+    "chooseSubStore": "Choose Sub-Store",
+    "description": "Description"
+  },
+  "5001": {
+    "name": "sadf asdf",
+    "storeid": "Display Store Code",
+    "storename": "Store Name",
+    "inventorymanagedat": "Inventory Managed at",
+    "Branch": "Branch",
+    "chooseSubStore": "Choose Sub-Store",
+    "description": "null"
+  },
+  "5002": {
+    "name": "sadf asdf",
+    "storeid": "Display Store Code",
+    "storename": "Store Name",
+    "inventorymanagedat": "Inventory Managed at",
+    "Branch": "Branch",
+    "chooseSubStore": "Choose Sub-Store",
+    "description": "null"
+  },
+  "5003": {
+    "itemid": "Item Id",
+    "productid": "Product Id",
+    "itemname": "Item Name",
+    "hsn": "HSN",
+    "purchaseprice": "Purchase Price",
+    "mrp": "MRP",
+    "markup": "Markup %",
+    "unitoftransaction": {
+      "packsize": "Pack Size",
+      "orderingunit": "Ordering Unit",
+      "dispensingunit": "Dispensing Unit"
+    },
+    "grouping": {
+      "category": "Item Category",
+      "group": "Item Group",
+      "subgroup": "Item Sub Group"
+    },
+    "manufacturing": {
+      "manufacturer": "Manufacturer"
+    },
+    "generic": {
+      "generic": "Generic"
+    }
+  },
+  "5004": {
+    "id": "Tax Id",
+    "name": "Tax Name",
+    "taxtype": "Tax Type",
+    "taxsubtype": "Tax Sub Type",
+    "formula": {
+      "value": "Tax Value",
+      "totalvalue": "Total Tax Value"
+    }
+  },
+  "5005": {
+    "id": "Supplier Id",
+    "name": "Supplier Name",
+    "category": "Supplier Category",
+    "type": "Supplier Type",
+    "DeliveryTerms": "Delivery Terms",
+    "OtherTerms": "Other Terms",
+    "address": {
+      "streetname": "Street Name",
+      "landmark": "Landmark",
+      "address": "Address",
+      "city": "City",
+      "state": "State",
+      "country": "Country",
+      "pincode": "Pincode"
+    },
+    "contactdetails": {
+      "storemanagername": "Store Manager Name",
+      "contactperson": "Contact Person",
+      "designation": "Designation",
+      "phone": "Phone",
+      "email": "Email",
+      "website": "Website"
+    },
+    "tax": {
+      "taxprofile": "Taxprofile",
+      "vattinno": "VAT TIN No",
+      "servicetaxregno": "Service Tax Reg No",
+      "excercisecode": "Excercise Code",
+      "incometaxpan": "Income Tax PAN",
+      "Csttinno": "CST No",
+      "gsttinno": "GST No",
+      "msme": "MSME",
+      "rtgscode": "RTGS Code",
+      "druglicence": "Drug Licence"
+    },
+    "paymentterms": {
+      "terms": "Payment Terms",
+      "creditperiod": "Credit Period (In Days)",
+      "doassociation": "Date of Association",
+      "discount": "Discount"
+    },
+    "bankinformation": {
+      "name": "Bank Name",
+      "number": "A/C No",
+      "renumber": "Re Enter A/C No",
+      "branch": "Branch",
+      "ifsc": "IFSC Code"
+    }
+  },
+  "5006": {
+    "id": "Manufacturer Id",
+    "name": "Manufacturer Name",
+    "description": "Description"
+  },
+  "5007": {
+    "Tableheading": "Item Store Mapping Table",
+    "storename": "Store Name",
+    "category": "Item Category",
+    "item": "Item Name",
+    "room": "Room",
+    "rack": "Rack",
+    "row": "Row",
+    "box": "Box",
+    "reorder": "Reorder Level No"
+  },
+  "sm": {
+    "heading": "",
+    "subheading": ""
+  },
+  "createum": {
+    "CreateUnitMaster": "Create a New Unit",
+    "UID": "Unit Id",
+    "Uname": "Unit Name"
+  },
+  "createpacksize": {
+    "CreateanewPacksize": "Create New Batch",
+    "PackID": "Pack Size Id",
+    "Pname": "Pack Name",
+    "QUANTITY": "Quantity"
+  },
+  "createSr": {
+    "createStockreason": "Enter a New Stock Reason",
+    "rcode": "Reason Code",
+    "rname": "Reason Name",
+    "remark": "Remarks"
+  },
+  "subgroup": {
+    "title": "Create a Item Sub Group",
+    "code": "Item Sub Group Code",
+    "name": "Item Sub Group Name",
+    "Mapping": "Item Group Mapping"
+  },
+  "group": {
+    "title": "Create a New Group",
+    "code": "Item Group Code",
+    "name": "Item Group Name",
+    "Mapping": "Item Category Mapping"
+  },
+  "rack": {
+    "title": "Create a new Rack",
+    "name": "Rack Name",
+    "SMapping": "Store Mapping",
+    "RoomMapping": "Room Mapping",
+    "RowMapping": "Row Mapping"
+  },
+  "box": {
+    "title": "Create a new Box",
+    "name": "Box Name",
+    "SMapping": "Store Mapping",
+    "RackMapping": "Rack Mapping"
+  },
+  "newItem": {
+    "title": "Create a New Category",
+    "code": "Item Type Code",
+    "prefixcode": "Prefix Code",
+    "typename": "Type Name"
+  },
+  "HSN": {
+    "title": "Create a new HSN Code",
+    "code": "HSN Code",
+    "name": "HSN Name",
+    "ptax": "Purchase Tax",
+    "stax": "Sales Tax"
+  },
+  "SubTaxMaster": {
+    "title": "Create a new Sub Tax",
+    "id": "Id",
+    "name": "Name",
+    "percentage": "Percentage",
+    "amt": "Amount"
+  },
+  "Payment": {
+    "title": "Create a New Payment Terms",
+    "code": "Payment Term Code",
+    "days": "No of Days",
+    "advance": "% of Advance",
+    "remark": "Reamrks"
+  },
+  "DeliveryTerms": {
+    "title": "Create a New Delivery Terms",
+    "code": "Delivery Code",
+    "desc": "Delivery Description"
+  },
+  "DeliveryMode": {
+    "title": "Create a New Delivery Mode",
+    "code": "Delivery Code",
+    "description": "Delivery Mode Description"
+  },
+  "otherterms": {
+    "title": "Create Extra Term",
+    "code": "Other Term Code",
+    "remark": "Remarks"
+  },
+  "room": {
+    "title": "ROOM",
+    "id": "Room Id",
+    "name": "Room Name",
+    "Mapping": "Store Mapping"
+  },
+  "row": {
+    "title": "ROW",
+    "id": "Row Id",
+    "name": "Row Name",
+    "Mapping": "Store Mapping",
+    "RoomMapping": "Room Mapping"
+  },
+  "GenericMaster": {
+    "title": "Create a New Generic",
+    "id": "Generic Id",
+    "name": "Generic Name",
+    "description": "Description"
+  },
+  "title": "Vue 3 i18n",
+  "description": "A Vue i18n next example using vue-i18n-next",
+  "Master": "Masters for Inventory",
+  "Mastercontent": "ஒரு பிராண்டின் அனைத்து சரக்கு மாஸ்டர்களையும் அமைக்கவும், இதனால் பங்குகளை கண்காணிக்கவும்.",
+  "stores": {
+    "title": "Stores",
+    "StoreMaster": {
+      "Master": "Stock Store",
+      "content": "Set up all the stores in your brand.",
+      "TableHeaderContent": "Index of all the stores in a brand, whether main store, sub-store, or department store.",
+      "FormHeader": "Create a New Store",
+      "FormHeaderContent": "Input all store details including name, ID, branch, relation to other stores, and others.",
+      "List": "Store List"
+    },
+    "Rack": {
+      "Master": "Stock Rack",
+      "content": "Set up all the racks in a room.",
+      "TableHeaderContent": "Index of all the racks in various storerooms.",
+      "List": "Rack List",
+      "FormHeader": "Create a New Rack"
+    },
+    "Box": {
+      "Master": "Stock Box",
+      "content": "Set up all the boxes in a row.",
+      "TableHeaderContent": "Index of the boxes in all the rows of your stores.",
+      "List": "Box List",
+      "FormHeader": "Create a New Box"
+    },
+    "Room": {
+      "Master": "Stock Room",
+      "content": "Set up all the rooms in a store.",
+      "TableHeaderContent": "Index of all the rooms in your stores.",
+      "List": "Room List",
+      "FormHeader": "Create a New Room"
+    },
+    "Row": {
+      "Master": "Stock Row",
+      "content": "Set up all the rows in a rack.",
+      "TableHeaderContent": "Index of the rows in all the racks of your stores.",
+      "List": "Row List",
+      "FormHeader": "Create a New Row"
+    }
+  },
+  "Supppliers": {
+    "title": "Suppliers",
+    "SupppliersMaster": {
+      "Master": "Stock Supplier",
+      "content": "Set up all the suppliers for the various items in the store.",
+      "TableHeaderContent": "Index of all the suppliers of various items in the store.",
+      "FormHeader": "Enter New Supplier",
+      "FormHeaderContent": "Input all the supplier details of the new supplier.",
+      "List": "Supplier List"
+    },
+    "PaymentTerms": {
+      "Master": "Stock Payment Terms",
+      "content": "Set up the payment terms for all the items in the store.",
+      "TableHeaderContent": "Index of all the stock payment terms for the various items in the store.",
+      "List": "Payment Terms List"
+    },
+    "DeliveryTerms": {
+      "Master": "Stock Delivery Terms",
+      "content": "Set up the stock delivery terms for all the items in the store.",
+      "TableHeaderContent": "Index of all the stock delivery terms for the various items in the store.",
+      "List": "Delivery Terms List"
+    },
+    "DeliveryMode": {
+      "Master": "Stock Delivery Mode",
+      "content": "Set up the delivery modes for all the items in the store.",
+      "TableHeaderContent": "Index of all the stock delivery modes for the various items in the store.",
+      "List": "Delivery Mode List"
+    },
+    "OtherTerms": {
+      "Master": "Stock Extra Terms",
+      "content": "Set up any extra terms for all the items in the store.",
+      "TableHeaderContent": "Index of all the extra terms for different items in the store.",
+      "List": "Extra Terms List"
+    }
+  },
+  "Items": {
+    "title": "Items",
+    "ItemMaster": {
+      "Master": "Stock Item",
+      "content": "Set up all the items in your stores.",
+      "TableHeaderContent": "Index of stock items along with their corresponding details",
+      "FormHeader": "Create a New Item",
+      "FormHeaderContent": "Input all the item details including name, ID, HSN code, unit, grouping, and others.",
+      "List": "Item List"
+    },
+    "UnitMaster": {
+      "Master": "Stock Unit",
+      "content": "Set up all the items available as individual units.",
+      "TableHeaderContent": "Index of items available as individual units along with their corresponding details.",
+      "List": "Unit List"
+    },
+    "PackSizeMaster": {
+      "Master": "Stock Batch",
+      "content": "Set up all the items available as a batch.",
+      "TableHeaderContent": "Index of items available as a batch along with their corresponding details.",
+      "List": "Batch List"
+    },
+    "StockReasons": {
+      "Master": "Stock Reasons",
+      "content": "File all the items that ended up unsold along with the reasons.",
+      "TableHeaderContent": "Index of stock reasons whether they be unsold, expired, damaged or lost.",
+      "List": "Stock Reasons List"
+    }
+  },
+  "ItemCategory": {
+    "title": "Category",
+    "ItemCategoryMaster": {
+      "Master": "Stock Category",
+      "content": "Set up the various item categories in all your stores.",
+      "TableHeaderContent": "Index of the various categories in the store along with the names and codes.",
+      "List": "Category List"
+    },
+    "GroupMaster": {
+      "Master": "Stock Group",
+      "content": "Set up all the various item groups in all your stores.",
+      "TableHeaderContent": "Index of the various groups present in different categories of your store.",
+      "List": "Group List"
+    },
+    "SubGroupMaster": {
+      "Master": "Stock Sub-Group",
+      "content": "Set up all the various sub-groups in all your stores.",
+      "TableHeaderContent": "Index of the various sub-groups present in different groups of your store.",
+      "List": "Sub-Group List"
+    },
+    "ItemCategorySupplierMapping": {
+      "Master": "Stock Category Supplier Mapping",
+      "content": "Map all the item categories with their respective suppliers.",
+      "TableHeaderContent": "Index of the available item suppliers and the respective item categories.",
+      "List": "Category - Supplier List",
+      "Formheader": "Enter New Category - Supplier Mapping"
+    },
+    "LinkNewCategoryandItemtostore": {
+      "Master": "Stock Store - Category - Item Mapping",
+      "content": "Map all the items in various categories to their respective stores.",
+      "TableHeaderContent": "Index of the available stores, categories, and the various items linked to them.",
+      "FormHeader": "New Store - Category - Item Linking",
+      "FormHeaderContent": "Link all stores with their respective categories and itemsLink all stores with their respective categories and items.",
+      "List": "Store - Category - Item List"
+    },
+    "StoreCategoryMapping": {
+      "Master": "Stock Store - Category Mapping",
+      "content": "Map all the categories to their respective stores.",
+      "TableHeaderContent": "Index of the available stores and the various categories linked to them.",
+      "List": "Store - Category List",
+      "Formheader": "New Store - Category Linking"
+    },
+    "RateContract": {
+      "Master": "Rate Contract",
+      "content": "Set up the master table of rate contracts for items with each supplier.",
+      "TableHeaderContent": "This master reflects the details of the item quotations and rate contracts of various suppliers, along with their respective payment and delivery terms."
+    }
+  },
+  "Tax": {
+    "title": "Tax",
+    "TaxMaster": {
+      "Master": "Stock Tax",
+      "content": "Set up all the taxes for the different items in the stores.",
+      "TableHeaderContent": "Index of all the taxes applicable to various items in the stores.",
+      "FormHeader": "Create a New Tax",
+      "FormHeaderContent": "Input all the details for the various taxes of different items.",
+      "List": "Tax List"
+    },
+    "HSNaster": {
+      "Master": "Stock HSN Code",
+      "content": "Set up all the HSN codes for the different items in the stores.",
+      "TableHeaderContent": "Index of all the HSN code applicable to various items in the stores.",
+      "List": "HSN Code List"
+    },
+    "SubTaxMaster": {
+      "Master": "Stock Sub-Tax",
+      "content": "Set up all the sub-taxes for the different items in the stores.",
+      "TableHeaderContent": "Index of all the sub-taxes applicable to various items in the stores.",
+      "List": "Sub-Tax List"
+    }
+  },
+  "Pharmacy": {
+    "title": "Pharmacy",
+    "GenericMaster": {
+      "Master": "Stock Generic",
+      "content": "Set up the stock generics for all the items in the store.",
+      "TableHeaderContent": "Index of all the stock generics for different items in the store.",
+      "List": "Generics List"
+    },
+    "User": {
+      "Master": "User",
+      "content": "This is the name of the database table. This is typically a descriptive name, such as ‘Customers’ or ‘Invoices’, and is used to identify the purpose of the table.",
+      "TableHeaderContent": ""
+    }
+  },
+  "Manufacturer": {
+    "title": "Manufacturer",
+    "ManufacturerMaster": {
+      "Master": "Stock Manufacturer",
+      "content": "Set up the manufacturers for different items in the store.",
+      "TableHeaderContent": "Index of all the manufacturers for direct item purchase when required. ",
+      "FormHeader": "Enter New Manufacturer",
+      "FormHeaderContent": "Input all the details of the manufacturers of various items.",
+      "List": "Manufacturer List"
+    }
+  },
+  "StoreMasterDetails": {
+    "title": "Items",
+    "ItemsInfo": {
+      "Value": "Value",
+      "Available": "Available",
+      "lowStock": "Low Stock",
+      "NotMoving": "Not Moving",
+      "expire": "Items are about to expire"
+    }
+  },
+  "StoreDetails": {
+    "title": "Store Details",
+    "inventorymanage": "INVENTORY MAINTAINED AT",
+    "ms": "MAIN STORE",
+    "Store": "SUB/DEPT. STORE",
+    "description": "DESCRIPTION"
+  },
+  "Paymentterms": {
+    "title": "Payment Terms",
+    "PaymentTerms": "INVENTORY MAINTAINED AT",
+    "creditperiod": "CREDIT PERIOD",
+    "discount": "DISCOUNT"
+  },
+  "ContactDetails": {
+    "title": "Contact Details",
+    "vendors": "VENDOR POC",
+    "designation": "DESIGNATION",
+    "email": "EMAIL",
+    "phone": "PHONE",
+    "website": "WEBSITE"
+  },
+  "ItemDetails": {
+    "title": "Item Details",
+    "itemcode": "ITEM CODE",
+    "productid": "PRODUCT ID",
+    "hsncode": "HSN CODE",
+    "descriptivename": "DESCRIPTIVE NAME",
+    "vaton": "VAT ON",
+    "markup": "MARK UP %"
+  },
+  "Grouping": {
+    "title": "Grouping",
+    "itemtype": "ITEM TYPE",
+    "itemgroup": "ITEM GROUP",
+    "itemsubgroup": "ITEM SUB GROUP"
+  },
+  "GenericandManufacturing": {
+    "title": "Generic and Manufacturing",
+    "generic": "GENERIC",
+    "manufacturer": "MANUFACTURER"
+  },
+  "Unitoftransaction": {
+    "title": "Unit of transaction",
+    "packsize": "PACK SIZE",
+    "orderingunit": "ORDERING UNIT",
+    "despensingUnit": "DISPENSING UNIT"
+  },
+  "UnitTransaction": {
+    "title": "Unit Transaction",
+    "ScheduledItem": "Scheduled Item",
+    "NarcoticItem": "Narcotic Item",
+    "DrugFormulary": "Drug Formulary",
+    "CriticalMedicine": "Critical Medicine",
+    "Alike": "Alike"
+  },
+  "Configuration": {
+    "title": "Configuration",
+    "Requiredexpirydate": "Required expiry date",
+    "Requiredbatchno": "Required batch no",
+    "Isnonchargeable": "Is non chargeable",
+    "Isconsignee": "Is consignee",
+    "AutoConsumed": "Auto Consumed",
+    "Asset": "Asset",
+    "HighValue": "High Value",
+    "XRayFilms": "X Ray Films",
+    "IsGSTExempt": "Is GST Exempt"
+  },
+  "MemberDetails": {
+    "title": "Member Details",
+    "suppliercategory": "SUPPLIER CATEGORY",
+    "associatedSince": "ASSOCIATED SINCE",
+    "lastpo": "LAST PO",
+    "phone": "PHONE",
+    "address": "ADDRESS",
+    "storemanagername": "STORE MANAGER",
+    "lastrequest": "LAST REQUEST",
+    "email": "EMAIL ID",
+    "remark": "REMARKS"
+  },
+  "TaxInfo": {
+    "title": "Tax",
+    "Taxprofile": "TAX PROFILE",
+    "vattinno": "VAT TIN NO",
+    "servicetaxregno": "SERVICE TAX REG NO",
+    "excercisecode": "EXCERCISE CODE",
+    "incometaxpan": "INCOME TAX PAN",
+    "csttinno": "CST TIN No",
+    "msme": "MSME",
+    "rtgscode": "RTGS CODE",
+    "druglicence": "DRUG LICENCE"
+  },
+  "quickCreate": {
+    "title": "Quick Create",
+    "AddItems": {
+      "title": "Add Items",
+      "content": "You can manually add or import excel"
+    },
+    "Check": {
+      "title": "Check Availability",
+      "content": "You can manually add or import excel"
+    },
+    "request": {
+      "title": "Raise a request",
+      "content": "You can manually add or import excel"
+    }
+  },
+  "bankInfo": {
+    "title": "Bank Info"
+  },
+  "Tabs": {
+    "details": "Details",
+    "Stores": "Stores",
+    "Suppliers": "Suppliers",
+    "Items": "Items",
+    "PO": "PO",
+    "GRN": "GRN",
+    "Payment": "Payment",
+    "StockMovement": "Stock Movement",
+    "User": "User",
+    "Documents": "Documents",
+    "ItemCategory": "Item Category",
+    "Logs": "Logs"
+  },
+  "blackboxInfo": {
+    "Purchaserate": "PURCHASE RATE",
+    "mrp": "MRP",
+    "quality": "QUANTITY",
+    "productsinOurrepository": "PRODUCTS IN OUR REPOSITORY",
+    "supplier": "SUPPLIERS",
+    "ourinventory": "OUR INVENTORY",
+    "lifetimegrn": "LIFE TIME GRN",
+    "paid": "PAID",
+    "discount": "DISCOUNT",
+    "balance": "BALANCE",
+    "Availablecreditdays": "AVAILABLE CREDIT DAYS"
+  },
+  "PO": {
+    "POCreation": {
+      "title": "Create a new PO without PI",
+      "content": "The supplier list for a hospital is a comprehensive list of vendors who provide necessary products and services to the hospital. It includes contact information for each supplier, along with product and service details. The list helps ensure that the hospital receives the highest quality products and services.",
+      "POID": "PO ID",
+      "UploadQuotes": "Upload Quotes",
+      "CHOOSESUPPLIER": "CHOOSE SUPPLIER"
+    }
+  },
+  "PurchaseIndent": {
+    "title": "Raise a PI"
+  },
+  "PurchaseOrder": {
+    "title": "Purchase Order"
+  },
+  "PurchaseAmmendment": {
+    "title": "PO Ammendment"
+  },
+  "Request": {
+    "title": "Raise a request from a store"
+  },
+  "billing": {
+    "insurancePayment": {
+      "paymentHeader": "Payment",
+      "claimNumber": "Claim Number",
+      "approvedAmount": "Approved Amount",
+      "mouDiscount": "MOU Discount",
+      "copay": "Copay",
+      "others": "Others"
+    },
+    "refundPayment": {
+      "otprefundHeader": "Provide Refund",
+      "refundPaymentHeader": "Payment",
+      "paymentmode": "Payment Mode",
+      "chooseservice": "Choose Service",
+      "quantity": "Quantity",
+      "amount": "Amount"
+    },
+    "createbill": {
+      "choosestore": "Choose Store"
+    }
+  },
+  "userManagement": {
+    "createrole": {
+      "formheader": "Create a New User Roles",
+      "header": "Roles Creation",
+      "branchname": "Branch Name",
+      "rolename": "Role Name",
+      "roleId": "Code",
+      "roleDescription": "Role Description"
+    },
+    "rolesAndPermission": {
+      "header": "Roles and Permission",
+      "content": "The supplier list for a hospital is a comprehensive list of vendors who provide necessary products and services to the hospital. It includes contact information for each supplier, along with product and service details. The list helps ensure that the hospital receives the highest quality products and services."
+    },
+    "creatUser": {
+      "branch": "Branch",
+      "role": "Role",
+      "code": "Code",
+      "department": "Department",
+      "name": "Name",
+      "dateOfBirth": "Date Of Birth",
+      "age": "Age",
+      "gender": "Gender",
+      "designation": "Designation",
+      "streetName": "Street Name",
+      "landmark": "Landmark",
+      "address": "Address",
+      "country": "Country",
+      "state": "State",
+      "city": "City",
+      "pinCode": "Pin Code",
+      "mobileNumber": "Mobile Number",
+      "alternativeMobileNumber": "Alternative Mobile Number",
+      "emailId": "Email Id"
+    },
+    "master": {
+      "master": "Master",
+      "masterContent": "The supplier list for a hospital is a comprehensive list of vendors who provide necessary products and services to the hospital. It includes contact information for each supplier, along with product and service details. The list helps ensure that the hospital receives the highest quality products and services."
+    },
+    "organization": {
+      "createorganization": "Create a New Organization",
+      "organizationCode": "Code",
+      "organizationName": "Organization Name",
+      "organizationDescription": "Organization Description",
+      "streetName": "Street Name",
+      "landmark": "Landmark",
+      "address": "Address",
+      "country": "Country",
+      "state": "State",
+      "city": "City",
+      "pinCode": "Pin Code",
+      "contactDetails": "Contact Details",
+      "contactPerson": "Contact Person",
+      "designation": "Designation",
+      "phoneNumber": "Phone Number",
+      "email": "Email"
+    },
+    "branch": {
+      "createBranch": "Create a New Branch",
+      "branchCode": "Code",
+      "branchName": "Branch Name",
+      "branchDescription": "Branch Description",
+      "organisation": "Organisation"
+    },
+    "department": {
+      "createdepartment": "Create a New Department",
+      "departmentCode": "Code",
+      "subDepartmentCode": "Sub-Department Code",
+      "departmentName": "Department Name",
+      "departmentDescription": "Department Description",
+      "parentBranch": "Branch",
+      "role": "Role",
+      "ringStrategy": "ring Strategy",
+      "timeOutDestinationTime": "Time Out Destination Time",
+      "didNumber": "DID Number"
+    },
+    "subDepartment": {
+      "createsubDepartment": "Create a New Sub-Department",
+      "subDepartmentCode": "Code",
+      "subDepartmentName": "Sub-Department Name",
+      "subDepartmentDescription": "Sub-Department Description",
+      "parentBranch": "Branch",
+      "parentDepartment": "Department"
+    }
+  },
+  "crm": {
+    "dashboard": "Dashboard",
+    "contact": {
+      "tabletitle": "Contact List",
+      "tablecontent": "Content of the Page",
+      "sitevisit": {
+        "creationheader": "Create a new Site Visit",
+        "creationcontent": "Content of the Page",
+        "leadphonenumber": "Lead Phone Number",
+        "leadsource": "Lead Source",
+        "sitevisitstatus": "Site Visit Status",
+        "sitevisitowner": "Site Visit Owner",
+        "sitevisittime": "Site Visit Time",
+        "sitevisittransportation": "Site Visit Transportation",
+        "sitevisitby": "Site Visit By",
+        "area": "Area",
+        "pickupstage": "Pickup Stage",
+        "noofpassengers": "No of Passengers",
+        "projectname": "Project Name",
+        "addresswithlandmark": "Address With Landmark",
+        "executive": "Executive",
+        "unitno": "Unit No",
+        "description": "Description",
+        "code": "Code",
+        "date": "Date"
+      },
+      "task": {
+        "formheader": "Create a New Task",
+        "Code": "Code",
+        "date": "Date",
+        "time": "Time",
+        "projectname": "ProjectName",
+        "taskstatus": "Task Status",
+        "prefferedmedium": "Preffered Medium",
+        "assignuser": "Assign User",
+        "taskpriority": "Task Priority",
+        "notes": "Notes"
+      },
+      "notes": {
+        "formheader": "Create a New Notes",
+        "Code": "Code",
+        "date": "Date",
+        "time": "Time",
+        "notes": "Notes"
+      }
+    },
+    "tasks": {
+      "title": "My Tasks",
+      "Pagecontent": "Content of the Page",
+      "tabs": {
+        "documentation": {
+          "title": "Create a New Documentation",
+          "content": "Content of the Page",
+          "priority": "priority",
+          "status": "status",
+          "taxname": "Tax Name",
+          "department": "Department",
+          "subdepartment": "Sub Department",
+          "role": "Role",
+          "docname": "Document Name",
+          "uploaddoc": "Upload Document",
+          "taskdescription": "Task Description",
+          "sla": "SLA"
+        },
+        "otbooking": {
+          "title": "Create a New OT Booking",
+          "content": "Content of the Page",
+          "priority": "priority",
+          "status": "status",
+          "taxname": "Tax Name",
+          "department": "Department",
+          "subdepartment": "Sub Department",
+          "role": "Role",
+          "branch": "Branch",
+          "theatre": "Theatre",
+          "date": "Date",
+          "time": "Time",
+          "taskdescription": "Task Description",
+          "sla": "SLA",
+          "searchnewform": "Search fro a New Form"
+        },
+        "promcollecttion": {
+          "title": "Create New PROM",
+          "content": "Content of the Page",
+          "priority": "priority",
+          "status": "status",
+          "taxname": "Tax Name",
+          "department": "Department",
+          "subdepartment": "Sub Department",
+          "role": "Role",
+          "createnewprom": "Choose a PROM Template",
+          "patientname": "Patient Name",
+          "dateofdeath": "Date of Death",
+          "chooseadoctor": "Choose A Doctor",
+          "remarks": "Remarks",
+          "enteraadharnumber": "Enter Aadhar Number",
+          "typeotp": "Type OTP",
+          "repeat": "Repeat",
+          "start": "Start",
+          "end": "End"
+        },
+        "consultation": {
+          "title": "Create New Consultation",
+          "content": "Content of the Page",
+          "priority": "priority",
+          "status": "status",
+          "taxname": "Tax Name",
+          "department": "Department",
+          "subdepartment": "Sub Department",
+          "role": "Role",
+          "branch": "Branch",
+          "taskdescription": "Task Description",
+          "sla": "SLA",
+          "chooseadoctor": "Choose A Doctor",
+          "selectanappointment": "Select an Appointment Time for the Selected Doctor"
+        },
+        "counselling": {
+          "title": "Create New Counselling",
+          "content": "Content of the Page",
+          "priority": "priority",
+          "status": "status",
+          "taxname": "Tax Name",
+          "department": "Department",
+          "subdepartment": "Sub Department",
+          "role": "Role",
+          "branch": "Branch",
+          "taskdescription": "Task Description",
+          "sla": "SLA",
+          "chooseadoctor": "Choose A Doctor",
+          "selectanappointment": "Select an Appointment Time for the Selected Doctor"
+        },
+        "todo": {
+          "tasks": {
+            "taskstatus": "Task Status",
+            "date": "Date",
+            "time": "Time",
+            "prefferedmedium": "Preffered Medium",
+            "assignagent": "Assign Agent",
+            "taskpriority": "Task Priority",
+            "notes": "Notes"
+          },
+          "sitevisits": {
+            "svowner": "SV Owner",
+            "projectname": "Project Name",
+            "visitdate": "Visit Date",
+            "visittime": "Visit Time",
+            "pickupstage": "Pickup Stage",
+            "sitevisitstatus": "Site Visit Status",
+            "address": "Address",
+            "noofpassengers": "No of Passengers",
+            "assignto": "Assign To",
+            "executive": "Executive",
+            "unitnumber": "Unit Number"
+          }
+        }
+      }
+    },
+    "masters": {
+      "title": "Masters",
+      "Mastercontent": "Content of the Page"
+    },
+    "adddetailform": {
+      "title": "Add Details",
+      "content": "Content of the Page",
+      "stname": "StreetName",
+      "landmark": "Landmark",
+      "address": "Address",
+      "city": "City",
+      "state": "State",
+      "country": "Country",
+      "pincode": "Pincode",
+      "name": "Full Name",
+      "phoneno": "Phone No",
+      "email": "Email",
+      "whatsappno": "Whats App No",
+      "altno": "Alternate No",
+      "projectname": "Project Name",
+      "leadsource": "Lead Source",
+      "leadmedium": "Lead Priority ",
+      "propertytype": "Property Type",
+      "budget": "Budget In lakhs",
+      "assignedby": "Assigned By",
+      "assignedto": "Assigned To",
+      "campaignname": "Campaign Name",
+      "leadstatus": "Lead Status",
+      "followpdate": "Follow Up Date",
+      "followtime": "Follow up Time",
+      "fbformid": "FB Form ID",
+      "lastname": "Last Name",
+      "Leadcode": "Lead Code",
+      "Contactcode": "Contact Code"
+    },
+    "templatesetup": {
+      "title": "Template Setup",
+      "leadstatusmaster": {
+        "title": "Lead Status Master",
+        "content": "Content of the Page",
+        "tabletitle": "Status Master",
+        "creation": "Create New Lead Status",
+        "code": "Code",
+        "desc": "Description",
+        "name": "Name"
+      },
+      "leadsourcemaster": {
+        "title": "Lead Source Master",
+        "content": "Content of the Page",
+        "tabletitle": "Source Master",
+        "creation": "Source Master",
+        "code": "Code",
+        "desc": "Description",
+        "name": "Name"
+      },
+      "agentmaster": {
+        "title": "Agent Master",
+        "content": "Content of the Page",
+        "tabletitle": "Agent Master",
+        "agentcreation": {
+          "creation": "Create New Agent",
+          "userid": "User ID",
+          "name": "First Name",
+          "lname": "Last Name",
+          "dob": "Date of Birth",
+          "email": "Email",
+          "mobileno": "Mobile No",
+          "intercomno": "InterCom No",
+          "dname": "Department Name",
+          "did": "Department ID",
+          "failoverdestination": "People Fail Over Destination",
+          "alloweddid": "Alloweddid Numbers",
+          "agentgroup": "Agent Group",
+          "code": "Code"
+        }
+      },
+      "tasktype": {
+        "title": "Task Type",
+        "content": "Content of the Page",
+        "tabletitle": "Task Master",
+        "creation": "Task Master",
+        "code": "Code",
+        "desc": "Description",
+        "name": "Name"
+      },
+      "projectmaster": {
+        "title": "Project Master",
+        "content": "Content of the Page",
+        "tabletitle": "Project List",
+        "creation": "Create New Project",
+        "name": "Name",
+        "location": "Location",
+        "type": "Type",
+        "desc": "Description",
+        "Code": "code"
+      },
+      "contacttype": {
+        "title": "Contact Type",
+        "content": "Content of the Page",
+        "tabletitle": "Contact Type List",
+        "creation": "Contact Type",
+        "code": "Code",
+        "name": "Name",
+        "desc": " Contact Description"
+      }
+    }
+  }
+}

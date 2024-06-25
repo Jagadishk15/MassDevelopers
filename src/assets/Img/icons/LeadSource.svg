@@ -1,0 +1,23 @@
+<svg id="Group_9679" data-name="Group 9679" xmlns="http://www.w3.org/2000/svg" width="510" height="510" viewBox="0 0 510 510">
+  <path id="Path_6285" data-name="Path 6285" d="M255,90.052a75.13,75.13,0,0,0-45-28.538L195,77.047,210,92.58A45.071,45.071,0,0,1,240,135v45l7.5,15,7.5-15,10.5-44.974Z" fill="#cdd9fb"/>
+  <path id="Path_6286" data-name="Path 6286" d="M270,135a45.072,45.072,0,0,1,30-42.42l15-15.533L300,61.514a75.132,75.132,0,0,0-45,28.538V180l7.5,15,7.5-15Z" fill="#b3c7ef"/>
+  <path id="Path_6287" data-name="Path 6287" d="M240,330v45a45.07,45.07,0,0,1-30,42.42l-15,15.533,15,15.533a75.136,75.136,0,0,0,45-28.538l8-44.974L255,330l-7.5-15Z" fill="#cdd9fb"/>
+  <path id="Path_6288" data-name="Path 6288" d="M300,448.486l15-15.533L300,417.42A45.071,45.071,0,0,1,270,375V330l-7.5-15L255,330v89.948A75.132,75.132,0,0,0,300,448.486Z" fill="#b3c7ef"/>
+  <path id="Path_6289" data-name="Path 6289" d="M60,180V330H255l15-75-15-75Z" fill="#8bcafc"/>
+  <path id="Path_6290" data-name="Path 6290" d="M450,180H255V330H450V270l-15-15,15-15Z" fill="#6594e2"/>
+  <path id="Path_6291" data-name="Path 6291" d="M120,240h30v30H120Z" fill="#ff8759"/>
+  <path id="Path_6292" data-name="Path 6292" d="M180,240h30v30H180Z" fill="#ffef4a"/>
+  <path id="Path_6293" data-name="Path 6293" d="M300,270H450V240H300Z" fill="#506dc7"/>
+  <path id="Path_6294" data-name="Path 6294" d="M210,150H0V0H210Z" fill="#57d9ad"/>
+  <path id="Path_6295" data-name="Path 6295" d="M60,60H90V90H60Z" fill="#e6effb"/>
+  <path id="Path_6296" data-name="Path 6296" d="M120,60h30V90H120Z" fill="#4b5055"/>
+  <path id="Path_6297" data-name="Path 6297" d="M510,150V0H300V150Z" fill="#fc0"/>
+  <path id="Path_6298" data-name="Path 6298" d="M360,60h30V90H360Z" fill="#e6effb"/>
+  <path id="Path_6299" data-name="Path 6299" d="M420,60h30V90H420Z" fill="#4b5055"/>
+  <path id="Path_6300" data-name="Path 6300" d="M210,510H0V360H210Z" fill="#ff8759"/>
+  <path id="Path_6301" data-name="Path 6301" d="M60,420H90v30H60Z" fill="#e6effb"/>
+  <path id="Path_6302" data-name="Path 6302" d="M120,420h30v30H120Z" fill="#4b5055"/>
+  <path id="Path_6303" data-name="Path 6303" d="M300,510H510V360H300Z" fill="#26bfa6"/>
+  <path id="Path_6304" data-name="Path 6304" d="M360,420h30v30H360Z" fill="#e6effb"/>
+  <path id="Path_6305" data-name="Path 6305" d="M420,420h30v30H420Z" fill="#4b5055"/>
+</svg>

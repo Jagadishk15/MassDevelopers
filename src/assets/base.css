@@ -1,0 +1,17 @@
+.overall-bg {
+    background-color: #F8F9FE;
+}
+
+.txt-title {
+    font-family: Roboto;
+    margin: 0px 10px;
+    font-size: 18px;
+    color: black;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 28.13px;
+    text-align: left;
+    padding-bottom: 20px;
+
+
+}

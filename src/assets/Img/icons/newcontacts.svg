@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4226" data-name="Rectangle 4226" width="512" height="512" transform="translate(12328 -5367)" fill="#ece7e7" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="newcontacts" transform="translate(-12328 5367)" clip-path="url(#clip-path)">
+    <path id="crmicons_Recovered_-22" data-name="crmicons [Recovered]-22" d="M225.88,240.94A105.41,105.41,0,1,0,120.47,135.53,105.405,105.405,0,0,0,225.88,240.94Zm0-180.7a75.29,75.29,0,1,1-75.29,75.29,75.292,75.292,0,0,1,75.29-75.29Zm0,210.82c-108.06.12-195.63,87.7-195.76,195.76a15.057,15.057,0,0,0,15.06,15.06h361.4a15.057,15.057,0,0,0,15.06-15.06c-.12-108.06-87.7-195.63-195.76-195.76ZM60.92,451.76a165.642,165.642,0,0,1,329.93,0Zm405.9-225.88H421.64V180.7a15.06,15.06,0,1,0-30.12,0v45.18H346.34a15.06,15.06,0,1,0,0,30.12h45.18v45.18a15.06,15.06,0,0,0,30.12,0V256h45.18a15.06,15.06,0,0,0,0-30.12Z" transform="translate(12327.88 -5367.12)" fill="#ece7e7"/>
+  </g>
+</svg>

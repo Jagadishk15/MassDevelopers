@@ -1,0 +1,342 @@
+//Variables Style Definition for SCSS
+$LoaderTransitionColor: #d8deeb;
+$LoaderBgColor: #FFFFFF;
+$OverallBgColor: #f8f9fe;
+$FormWhiteColor: #ffffff;
+$greenbgcolor: #6CCFA8;
+$LabelColor: #999999;
+$statusoverduecolor: #ff5f57;
+$LightText: #999999;
+$FontColor9: #999999;
+$FontColor4: #444444;
+$FontColor1: #e1e1e1;
+// TransplantVariables
+$lightbg-1: #e1e1e1;
+$backlist: #3096ff;
+$blackbgcolor: #000000;
+$txtwhite: #ffffff;
+$lighttext: #999999;
+$lightbgcolor: #f7f7f7;
+$lightbgcolor1: #f8fafb;
+$greenbgcolor: #6CCFA8;
+$cardbg: #ffffff;
+$formbgcolor: #ffffff;
+$txtblue: #0A82FF;
+$borderbg: #e1e1e1;
+$headercolor: #1c1d1f;
+$sidebar: #1c1d1f;
+$HeaderStatsBg: #0148E2;
+$HeaderStatsContentColor: #FFFFFF;
+$SidebarBgColour: #1C1D1F;
+$overall-bgcolor: #f8f9fe;
+
+
+$buttoncolor: #3096ff;
+$tabnamecolor: #0148e2;
+$cardbordercolor: #e1e1e1;
+$statusactivecolor: #28c840;
+$statusoverduecolor: #ff5f57;
+$tabbgcolor: #f7f7f7;
+$tabbgcolor2: #cbe4ff;
+$amberstatus: #febc2e;
+$iconprimary: #999999;
+$backbuttonicon: #0088cc;
+$cardbg: #ffffff;
+$txtcolor: #444444;
+$lightbg-1: #e1e1e1;
+$label-color: #999999;
+$browncolor: #EB977B;
+// status color for whole application
+$successcolor: #00C447;
+$warningcolor: #FFBE2E;
+$dangercolor: #FF5F57;
+
+// care pathway template 
+
+$caretempheaderbg: rgb(26, 149, 42);
+$linearcolor1: rgba(59, 26, 149, 1);
+$linearcolor2: rgba(76, 83, 249, 1);
+$linearcolor3: rgba(179, 126, 248, 1);
+
+$filterimgbg: rgb(145, 130, 145);
+$cardbatchcolor: #f2f1f8;
+
+// care pathway template 
+// patient onboarding card color variables
+$card1bgcolor: #FFCE0C;
+$card2bgcolor: #7001DF;
+$card3bgcolor: #000000;
+$card4bgcolor: #8ED9F8;
+// patient onboarding card color variables
+// TransplantVariables
+//font-size
+//button-bg-color
+//button-text-color
+//font-family
+//Variables Style Definition for SCSS
+
+//Header-Styles//
+$HeaderBg: #000000;
+$CRMHeaderBg: #0f468d;
+$InventoryHeaderImages: invert(34%) sepia(31%) saturate(22%) hue-rotate(3deg) brightness(102%) contrast(96%);
+$EntityListBg: #3096ff;
+$EntityListColor: #ffffff;
+$EntityListBadgeBg: #f59e0b;
+$EntityListBadgeColor: #ffffff;
+//Header-Styles//
+//Header-Sidebar//
+$HeaderSidebarBg: #000000;
+
+$transplantsidebar: #000000;
+//Header-Sidebar//
+
+//Primevue-Tabs//
+$PTabBg: #f8f8f8;
+$PTabBorder: #f8f8f8;
+$PHighlightBorder: #0148e2;
+$PTabFont: #999999;
+//Primevue-Tabs//
+
+//Primevue-Table//
+$PTOverallHeaderBg: #f8f9fa;
+$PTBodyBorder: #e1e1e1;
+$PTHeadBorder: #e1e1e1;
+$PTWrapperBg: #f9fbfc;
+$PTHeader-Bg: #f9fbfc;
+$PTBodyHoverBg: #f9fbfc;
+$PTBodyHoverBorder: #cdcdcd;
+$PTHeaderColor: #999999;
+$PTBodyColor: #999999;
+$PPaginatorBg: #faf8f8;
+$PPaginatorBorder: #dee2e6;
+//Primevue-Table//
+
+//General-Buttons//
+$AddButton: #0A82FF;
+$EditIcon: rgb(4, 177, 245);
+$DeleteIcon: rgb(245, 4, 4);
+//General-Buttons//
+
+//General-Status//
+$ActiveBorder: #9EB0FE;
+$ActiveBg: #F3F6FF;
+$ActiveColor: #1F46FD;
+$InActiveBorder: #E1E1E1;
+$InActiveBg: #FAFAFA;
+$InActiveColor: #999999;
+$HighBorder: #F2A796;
+$HighBg: #FCE9E5;
+$HighColor: #E12A02;
+$MediumBorder: #F8D59E;
+$MediumBg: #FFF8E6;
+$MediumColor: #EFA333;
+$LowBorder: #ABD5A0;
+$LowBg: #EEF6EB;
+$LowColor: #49A02D;
+
+//General-Status//
+
+//Form-Components//
+$BackToMaster: #3096ff;
+$DropdownBorder: #e1e1e1;
+$DropdownFocusBorder: #e1e1e1;
+$DropdownTriggerColor: #e1e1e1;
+$MultiSelectBorder: #e1e1e1;
+$MultiSelectHoverBorder: #e1e1e1;
+$MultiSelectFocusBorder: #e1e1e1;
+$InputTextBorder: #e1e1e1;
+$InputTextHoverBorder: #e1e1e1;
+$InputTextFocusBorder: #e1e1e1;
+$RadioBorder: #3096ff;
+$RadioBg: #3096ff;
+$RadioHoverBorder: #3096ff;
+$RadioFocusBorder: #3096ff;
+$RadioFocusBg: #3096ff;
+$CalendarButtonBg: #ffffff;
+$CalendarButtonBorder: #e1e1e1;
+$CalendarColor: #e1e1e1;
+//Form-Components//
+
+///////AVittam
+// $CrmHeading: #ffffff;
+
+// //AvittamHomes-HeaderBg
+// $HeaderBg: #ea7b26;
+// $HeaderLogoBg: #ea7b26;
+// $Hamburger: #999999;
+// //AvittamHomes-HeaderSidebarBg
+// $HeaderSidebarBg: #ea7b26;
+
+// //Avittam-Header-Images
+// $HeaderImages: brightness(0) invert(0);
+
+// //Avittam-Header-Menu-Images
+// $HeaderMenuImages: brightness(0) invert(0);
+
+// //Selected
+// $SelectedBg: #4582ff;
+// $SelectedColor: #ffffff;
+// $SelectedImg: brightness(0) invert(1);
+
+// //BeforeSelected
+// $BeforeSelectedImg: brightness(0) invert(0);
+// $BeforeSelectedColor: #000000;
+
+// //LiveCall
+// $LiveVCallBg: #3096ff;
+// $LiveVCallColor: #ffffff;
+// $LiveVCallBadgeBg: #f59e0b;
+// $LiveVCallBadgeColor: #ffffff;
+// $NotificationBadgeBg: #3096ff;
+// $NotificationBadgeColor: #ffffff;
+
+// //sidebaravatar
+// $SidebarAvatarBg: #4582ff;
+// $SidebarAvatarColor: #ffffff;
+// //headeravatar
+// $HeaderAvatarBg: #4582ff;
+// $HeaderAvatarColor: #ffffff;
+
+// //AvittamHomes-HeaderSidebarBg
+// $HeaderSidebarBg: #ea7b26;
+
+// //Avittam-Header-Images
+// $HeaderImages: brightness(0) invert(0);
+
+// //Avittam-Header-Menu-Images
+// $HeaderMenuImages: brightness(0) invert(0);
+
+// //Selected
+// $SelectedBg: #4582ff;
+// $SelectedColor: #ffffff;
+// $SelectedImg: brightness(0) invert(1);
+
+// //BeforeSelected
+// $BeforeSelectedImg: brightness(0) invert(0);
+// $BeforeSelectedColor: #000000;
+
+// //LiveCall
+// $LiveVCallBg: #3096ff;
+// $LiveVCallColor: #ffffff;
+// $LiveVCallBadgeBg: #f59e0b;
+// $LiveVCallBadgeColor: #ffffff;
+// $NotificationBadgeBg: #3096ff;
+// $NotificationBadgeColor: #ffffff;
+
+// //sidebaravatar
+// $SidebarAvatarBg: #4582ff;
+// $SidebarAvatarColor: #ffffff;
+// //headeravatar
+// $HeaderAvatarBg: #4582ff;
+// $HeaderAvatarColor: #ffffff;
+
+/////////Medway
+$CrmHeading: #ffffff;
+
+//AvittamHomes-HeaderBg
+// $HeaderBg: #0f468d;
+$HeaderLogoBg: #ffffff;
+$Hamburger: #ffffff;
+//AvittamHomes-HeaderSidebarBg
+$HeaderSidebarBg: #0f468d;
+
+//Avittam-Header-Images
+$HeaderImages: brightness(0) invert(1);
+
+//Avittam-Header-Menu-Images
+$HeaderMenuImages: brightness(0) invert(0);
+
+//Selected
+$SelectedBg: #ffffff;
+$SelectedColor: #ffffff;
+$SelectedImg: brightness(0) invert(1);
+
+//BeforeSelected
+$BeforeSelectedImg: brightness(0) invert(1);
+$BeforeSelectedColor: #ffffff;
+
+//LiveCall
+$LiveVCallBg: #3096ff;
+$LiveVCallColor: #ffffff;
+$LiveVCallBadgeBg: #f59e0b;
+$LiveVCallBadgeColor: #ffffff;
+$NotificationBadgeBg: #3096ff;
+$NotificationBadgeColor: #ffffff;
+
+//sidebaravatar
+$SidebarAvatarBg: #4582ff;
+$SidebarAvatarColor: #ffffff;
+//headeravatar
+$HeaderAvatarBg: #4582ff;
+$HeaderAvatarColor: #ffffff;
+
+//AvittamHomes-HeaderSidebarBg
+$HeaderSidebarBg: #0f468d;
+
+//Avittam-Header-Images
+$HeaderImages: brightness(0) invert(1);
+
+//Avittam-Header-Menu-Images
+$HeaderMenuImages: brightness(0) invert(0);
+
+//Selected
+$SelectedBg: #4582ff;
+$SelectedColor: #ffffff;
+$SelectedImg: brightness(0) invert(1);
+
+//BeforeSelected
+$BeforeSelectedImg: brightness(0) invert(1);
+$BeforeSelectedColor: #ffffff;
+
+//LiveCall
+$LiveVCallBg: #3096ff;
+$LiveVCallColor: #ffffff;
+$LiveVCallBadgeBg: #f59e0b;
+$LiveVCallBadgeColor: #ffffff;
+$NotificationBadgeBg: #3096ff;
+$NotificationBadgeColor: #ffffff;
+
+//sidebaravatar
+$SidebarAvatarBg: #4582ff;
+$SidebarAvatarColor: #ffffff;
+//headeravatar
+$HeaderAvatarBg: #4582ff;
+$HeaderAvatarColor: #ffffff;
+
+// general mixins
+
+@mixin alternate-bg-color($oddbg, $evenbg) {
+    &:nth-child(odd) {
+        background-color: $oddbg;
+    }
+
+    &:nth-child(even) {
+        background-color: $evenbg;
+    }
+}
+
+@mixin center-vertically {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+}
+
+@mixin center-horizontally {
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+}
+
+@mixin light-text($font-size, $font-weight) {
+    color: $lighttext;
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
+
+@mixin custom-text($txtcolor, $font-size, $font-weight) {
+    color: $txtcolor;
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
+
+// mixins
