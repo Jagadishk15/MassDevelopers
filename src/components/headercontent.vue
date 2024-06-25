@@ -1,5 +1,4 @@
-<template>
-    <!-- <p>sas</p> -->
+<!-- <template>
     <div class="txtheader">
 
         <p class="txt-title
@@ -73,5 +72,27 @@ export default defineComponent({
 .txtheader {
 
     margin: 30px;
+}
+</style> -->
+<template>
+    <p>sas</p>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+export default defineComponent({
+
+    setup() {
+        return {
+
+        }
+    }
+
+})
+</script>
+
+<style lang="scss" scoped>
+.tab-icon {
+    width: 30px;
 }
 </style>

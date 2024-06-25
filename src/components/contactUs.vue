@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
 
     <div class="chead">
         <div class="titletxt">
@@ -13,7 +13,6 @@
             <div class="formbg">
                 <img class="cbg" src="@/assets/Img/images/cc1.jpg">
                 <div class="cform">
-                    <!-- <b-row> -->
                     <div class="alignf">
                         <b-col cols='12' sm="12" lg="6" xl="5">
                             <div class="alignf my-5">
@@ -56,18 +55,7 @@
                                 </div>
 
                             </div>
-                            <!-- <b-row>
 
-                            <b-col cols='8' sm="8" lg="12">
-                                <TextInput placeholder="dd" />
-                            </b-col>
-                        </b-row>
-                        <b-row>
-
-                            <b-col cols='8' sm="8" lg="12">
-                                <TextArea placeholder="dd" />
-                            </b-col>
-                        </b-row> -->
                         </b-col>
                         <b-col cols='11' sm="11" lg="5">
                             <div class="logoalign">
@@ -111,7 +99,6 @@
                             </div>
                         </b-col>
                     </div>
-                    <!-- </b-row> -->
 
                 </div>
             </div>
@@ -438,5 +425,27 @@ export default defineComponent({
         height: 1400px;
         background-color: #7E7A7A99;
     }
+}
+</style> -->
+<template>
+    <p>sas</p>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+export default defineComponent({
+
+    setup() {
+        return {
+
+        }
+    }
+
+})
+</script>
+
+<style lang="scss" scoped>
+.tab-icon {
+    width: 30px;
 }
 </style>

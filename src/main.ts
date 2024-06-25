@@ -8,8 +8,7 @@ import "vue3-easy-data-table/dist/style.css";
 import BootstrapVue3 from "bootstrap-vue-3";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue-3/dist/bootstrap-vue-3.css";
-import { createI18n } from "vue-i18n";
-import messages from "@intlify/unplugin-vue-i18n/messages";
+// import { createI18n } from "vue-i18n";
 import "./assets/main.scss";
 import PrimeVue from "primevue/config";
 import AutoComplete from "primevue/autocomplete";
@@ -118,13 +117,13 @@ import GoogleMap from "vue-google-maps-ui";
 // import x5GMaps from "x5-gmaps";
 //import VueGoogleMaps from "@fawmi/vue-google-maps";
 import "vuestic-ui/css";
-const i18n = createI18n({
-  legacy: false,
-  globalInjection: true,
-  locale: "english",
-  fallbackLocale: "en",
-  messages: messages,
-});
+// const i18n = createI18n({
+//   legacy: false,
+//   globalInjection: true,
+//   locale: "english",
+//   fallbackLocale: "en",
+//   messages: messages,
+// });
 import { required, email } from "@vee-validate/rules";
 type Messages = {
   [key: string]: string;
@@ -186,7 +185,7 @@ configure({
 const app = createApp(App);
 app.use(createVuestic());
 app.use(PrimeVue, { ripple: true });
-app.use(i18n);
+// app.use(i18n);
 app.use(createPinia());
 // app.use(x5GMaps, {
 //   key: "AIzaSyAMnbFolg-a-O0QJ6YWdoVHmH_n_SmEleQ",

@@ -26,13 +26,13 @@
 
 
                     <div @click="
-                    $router.push({
-                        name: '/',
-                        path: '/',
-                        query: { TabValue: 'Tab4' },
-                    }),
-                    (mobileoptionvisible = false)
-                    " class="d-flex align-items-center">
+                        $router.push({
+                            name: '/',
+                            path: '/',
+                            query: { TabValue: 'Tab4' },
+                        }),
+                        (mobileoptionvisible = false)
+                        " class="d-flex align-items-center">
 
                         <!-- <div>
                         <img src="@/assets/Img/icons/mytask.svg" class="header-images" />
@@ -42,27 +42,27 @@
 
 
                     <div class="d-flex align-items-center" @click="
-                    $router.push({ path: '/userdashboard' }),
-                    (mobileoptionvisible = false)
-                    ">
+                        $router.push({ path: '/userdashboard' }),
+                        (mobileoptionvisible = false)
+                        ">
                         <div>
                             <!-- <img src="@/assets/Img/icons/settingimg.svg" class="header-images" /> -->
                         </div>
                         <p class="menu-txt">Project</p>
                     </div>
                     <div class="d-flex align-items-center" @click="
-                    $router.push({ path: '/Project' }),
-                    (mobileoptionvisible = false)
-                    ">
+                        $router.push({ path: '/Project' }),
+                        (mobileoptionvisible = false)
+                        ">
                         <div>
                             <!-- <img src="@/assets/Img/icons/settingimg.svg" class="header-images" /> -->
                         </div>
                         <p class="menu-txt">Careers</p>
                     </div>
                     <div class="d-flex align-items-center" @click="
-                    $router.push({ path: '/userdashboard' }),
-                    (mobileoptionvisible = false)
-                    ">
+                        $router.push({ path: '/userdashboard' }),
+                        (mobileoptionvisible = false)
+                        ">
                         <div>
                             <!-- <img src="@/assets/Img/icons/settingimg.svg" class="header-images" /> -->
                         </div>

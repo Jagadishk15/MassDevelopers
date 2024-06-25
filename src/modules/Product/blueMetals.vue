@@ -1,11 +1,11 @@
-<template>
+<!-- <template>
     <div>
         <div class="h-title">
             <p class="c-name">Blue Metals</p>
 
         </div>
         <b-container>
-            <!-- <Content /> -->
+
             <div class="mb-5">
                 <div class="contain"></div>
                 <p class="txt-d  my-5
@@ -133,19 +133,11 @@
 
                     </div>
 
-                    <!-- <div class="alignf  my-5">
-                    <b-col cols='10' sm="10" lg="12" class="m-2">
-                        <div class="label-d-none label">
-                            <TextArea type="text" :rules="{ required: true }" :required-icon="true" name="Description"
-                                placeholder="Description" :rows="6" id="Description" label="Email address" />
-                        </div>
-                    </b-col>
 
-                </div> -->
                 </div>
             </b-form>
 
-            <!-- <groupimage /> -->
+
         </b-container>
 
     </div>
@@ -607,4 +599,26 @@ export default defineComponent({
     }
 }
 
-//</style>
+//</style> -->
+<template>
+    <p>sas</p>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+export default defineComponent({
+
+    setup() {
+        return {
+
+        }
+    }
+
+})
+</script>
+
+<style lang="scss" scoped>
+.tab-icon {
+    width: 30px;
+}
+</style>

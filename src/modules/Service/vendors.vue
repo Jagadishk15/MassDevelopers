@@ -1,12 +1,7 @@
-<template>
+<!-- <template>
     <div>
         <div class="container1">
-            <!-- <img src="img_snow_wide.jpg" alt="Snow" style="width:100%;">
-        <div class="bottom-left">Bottom Left</div>
-        <div class="top-left">Top Left</div>
-        <div class="top-right">Top Right</div>
-        <div class="bottom-right">Bottom Right</div>
-        <div class="centered">Centered</div> -->
+
             <div>
                 <img class="p-title" src="@/assets/Img/images/image 171.png">
             </div>
@@ -19,19 +14,12 @@
         <b-container>
             <div v-for="item in headercontent">
                 <designheadercontent :headercontent="item" />
-                <!-- {{ item?.topimage }} -->
+
                 <groupimage :topimage="item?.topimage" :bottomimage="item?.bottomimage" />
                 <p class="endtxt">"</p>
 
             </div>
-            <!-- <designheadercontent />
-            <groupimage />
-            <designheadercontent />
-            <groupimage />
-            <designheadercontent />
-            <groupimage />
-            <designheadercontent />
-            <groupimage /> -->
+
         </b-container>
 
     </div>
@@ -55,18 +43,7 @@ export default defineComponent({
         contactUS,
         designheadercontent
     },
-    // props: {
-    //     topimage: {
-    //         default: []
-    //     },
-    //     bottomimage: {
-    //         default: []
-    //     },
-    //     headercontent: {
-    //         default: {}
-    //     },
 
-    // },
     setup() {
         const products = ref();
         const responsiveOptions = ref([
@@ -274,5 +251,27 @@ export default defineComponent({
     padding-bottom: 20px;
 
 
+}
+</style> -->
+<template>
+    <p>sas</p>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+export default defineComponent({
+
+    setup() {
+        return {
+
+        }
+    }
+
+})
+</script>
+
+<style lang="scss" scoped>
+.tab-icon {
+    width: 30px;
 }
 </style>

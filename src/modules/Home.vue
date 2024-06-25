@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div>
         <section>
             <div class="h-title">
@@ -135,24 +135,13 @@
             <div>
                 <v-container>
                     <v-carousel>
-                        <!-- <v-carousel-item src="/src/assets/Img/images/image 29.png" cover></v-carousel-item>
-                        <v-carousel-item src="https://cdn.vuetifyjs.com/images/cards/docks.jpg" cover></v-carousel-item>
-
-                        <v-carousel-item src="https://cdn.vuetifyjs.com/images/cards/hotel.jpg" cover></v-carousel-item>
-
-                        <v-carousel-item src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-                            cover></v-carousel-item> -->
+                
                         <v-carousel-item src="/src/assets/Img/images/image 93.svg" cover></v-carousel-item>
                         <v-carousel-item src="/src/assets/Img/images/image 94.svg" cover></v-carousel-item>
                         <v-carousel-item src="/src/assets/Img/images/image 91.svg" cover></v-carousel-item>
                         <v-carousel-item src="/src/assets/Img/images/image 911.svg" cover></v-carousel-item>
                     </v-carousel>
-                    <!-- <v-carousel-item src="@/assets/Img/images/image 29.png" cover></v-carousel-item> -->
-
-                    <!-- <v-carousel-item src="@/assets/Img/images/image 93.svg" cover></v-carousel-item>
-                        <v-carousel-item src="@/assets/Img/images/image 94.svg" cover></v-carousel-item>
-                        <v-carousel-item src="@/assets/Img/images/image 91.svg" cover></v-carousel-item>
-                        <v-carousel-item src="@/assets/Img/images/image 911.svg" cover></v-carousel-item> -->
+                   
 
                 </v-container>
             </div>
@@ -161,18 +150,12 @@
                     compete with
                     its counterparts, in several departments of construction. </p>
             </div>
-            <!-- <b-row>
-                <b-col>
-
-
-                </b-col>
-            </b-row> -->
+           
         </b-container>
         <section>
             <div class="formbg">
                 <img class="high" src="@/assets/Img/images/high.jpg">
                 <div class="cform">
-                    <!-- <b-row> -->
                     <div class="alignf">
                         <b-col cols='11' sm="11" lg="6" xl="5">
                             <div class="leftq">
@@ -206,7 +189,6 @@
                             </div>
                         </b-col>
                     </div>
-                    <!-- </b-row> -->
 
                 </div>
             </div>
@@ -318,18 +300,11 @@
                     </div>
 
                 </div>
-                <!-- <img class="enqfit" src="@/assets/Img/images/enq.jpg">
-                        <div class="enqform">
-                            <p>Find out more</p>
 
-
-                        </div> -->
 
             </div>
         </section>
-        <!-- <b-container>
            
-        </b-container> -->
 
     </div>
     <section>
@@ -1494,5 +1469,27 @@ export default defineComponent({
             }
         }
     }
+}
+</style> -->
+<template>
+    <p>sas</p>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+export default defineComponent({
+
+    setup() {
+        return {
+
+        }
+    }
+
+})
+</script>
+
+<style lang="scss" scoped>
+.tab-icon {
+    width: 30px;
 }
 </style>

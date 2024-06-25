@@ -1,12 +1,7 @@
 <template>
     <div>
         <div class="container1">
-            <!-- <img src="img_snow_wide.jpg" alt="Snow" style="width:100%;">
-        <div class="bottom-left">Bottom Left</div>
-        <div class="top-left">Top Left</div>
-        <div class="top-right">Top Right</div>
-        <div class="bottom-right">Bottom Right</div>
-        <div class="centered">Centered</div> -->
+
             <div>
                 <img class="p-title" src="@/assets/Img/images/projectfit.jpeg">
             </div>
@@ -96,11 +91,11 @@
             </div>
 
 
-            <!-- <groupimage /> -->
+
         </b-container>
 
     </div>
-    <contactUS />
+    <!-- <contactUS /> -->
 
 </template>
 
@@ -110,14 +105,14 @@ import Content from '@/components/headercontent.vue'
 import designheadercontent from '@/components/designHeaderContent.vue'
 
 import groupimage from '@/components/groupimage.vue'
-import contactUS from '@/components/contactUs.vue'
+// import contactUS from '@/components/contactUs.vue'
 
 
 export default defineComponent({
     components: {
         Content,
         groupimage,
-        contactUS,
+        // contactUS,
         designheadercontent
     },
     setup() {
