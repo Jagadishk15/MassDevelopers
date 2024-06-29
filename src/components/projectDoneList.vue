@@ -1,8 +1,8 @@
-<!-- <template>
+<template>
     <b-container>
         <div class="fiveImage">
             <b-row>
-                <b-col col="12" lg="3" xl="4" v-for="item in 3">
+                <b-col cols="12" lg="3" xl="4" v-for="item in 3">
                     <div class="imgalign">
 
                         <img class="mx-5" src="@/assets/Img/images/image 127.svg">
@@ -11,7 +11,7 @@
                 </b-col>
             </b-row>
             <b-row align-h="around">
-                <b-col col="12" lg="6" xl="6" v-for="item in 2">
+                <b-col cols="12" lg="6" xl="6" v-for="item in 2">
                     <div class="imgalign my-5">
 
                         <img class="mx-5" src="@/assets/Img/images/image 127.svg">
@@ -54,27 +54,4 @@ export default defineComponent({
     color: #000000;
 
 }
-</style> -->
-<template>
-    <p>sas</p>
-</template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({
-
-    setup() {
-        return {
-
-        }
-    }
-
-})
-</script>
-
-<style lang="scss" scoped>
-.tab-icon {
-    width: 30px;
-}
 </style>
-

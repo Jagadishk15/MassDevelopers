@@ -36,7 +36,7 @@
                 </p>
                 <div class="contain1"></div>
             </div>
-            <!-- <div class="aligntxtc my-5 py-5" style="text-align: center;">
+            <div class="aligntxtc my-5 py-5" style="text-align: center;">
                 <b-row align-h="between my-5">
                     <b-col cols="4">Glass Blocks</b-col>
                     <b-col cols="4">Solid Concrete Blocks</b-col>
@@ -73,7 +73,7 @@
                     <b-col cols="4">Cinder Blocks</b-col>
                 </b-row>
 
-            </div> -->
+            </div>
             <div class="img-align">
                 <div class="imgrows">
                     <div class="column">

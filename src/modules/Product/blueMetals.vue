@@ -27,7 +27,7 @@
 
                 <div class="contain1"></div>
             </div>
-            <!-- <div class="aligntxtc my-5 py-5" style="text-align: center;">
+            <div class="aligntxtc my-5 py-5" style="text-align: center;">
                 <b-row align-h="start my-5">
                     <b-col cols="4">Strength and Durability</b-col>
                 </b-row>
@@ -51,7 +51,7 @@
                     <b-col cols="4">Versatility</b-col>
                     <b-col cols="4">Aesthetic Appeal</b-col>
                 </b-row>
-            </div> -->
+            </div>
             <div class="img-align">
                 <div class="imgrows">
                     <div class="column">

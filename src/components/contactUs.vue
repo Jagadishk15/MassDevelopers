@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
 
     <div class="chead">
         <div class="titletxt">
@@ -425,27 +425,5 @@ export default defineComponent({
         height: 1400px;
         background-color: #7E7A7A99;
     }
-}
-</style> -->
-<template>
-    <p>sas</p>
-</template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({
-
-    setup() {
-        return {
-
-        }
-    }
-
-})
-</script>
-
-<style lang="scss" scoped>
-.tab-icon {
-    width: 30px;
 }
 </style>
