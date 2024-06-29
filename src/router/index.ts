@@ -1,16 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Layout from '@/components/Header.vue'
-// import Home from '@/modules/Home.vue'
+import Home from '@/modules/Home.vue'
 import Project from '@/modules/Project.vue'
-// import blocks from '@/modules/Product/blocks.vue'
-// import blueMetals from '@/modules/Product/blueMetals.vue'
-// import mSand from '@/modules/Product/mSand.vue'
-// import paverblocks from '@/modules/Product/paverblocks.vue'
+import blocks from '@/modules/Product/blocks.vue'
+import blueMetals from '@/modules/Product/blueMetals.vue'
+import mSand from '@/modules/Product/mSand.vue'
+import paverblocks from '@/modules/Product/paverblocks.vue'
 
-// import architectural from '@/modules/Service/architectural.vue'
-// import construction from '@/modules/Service/construction.vue'
-// import transportation from '@/modules/Service/transportation.vue'
-// import vendors from '@/modules/Service/vendors.vue'
+import architectural from '@/modules/Service/architectural.vue'
+import construction from '@/modules/Service/construction.vue'
+import transportation from '@/modules/Service/transportation.vue'
+import vendors from '@/modules/Service/vendors.vue'
 
 
 
@@ -26,11 +26,11 @@ const router = createRouter({
       name: 'Layout',
       component: Layout,
       children: [
-        // {
-        //   path: '/',
-        //   name: 'home',
-        //   component: Home
-        // },
+        {
+          path: '/',
+          name: 'home',
+          component: Home
+        },
         {
 
           path: '/Project',
@@ -38,51 +38,51 @@ const router = createRouter({
           component: Project
         },
 
-        // {
-        //   path: '/blocks',
-        //   name: 'blocks',
-        //   component: blocks
-        // },
-        // {
+        {
+          path: '/blocks',
+          name: 'blocks',
+          component: blocks
+        },
+        {
 
-        //   path: '/blueMetals',
-        //   name: 'blueMetals',
-        //   component: blueMetals
-        // },
-        // {
-        //   path: '/mSand',
-        //   name: 'mSand',
-        //   component: mSand
-        // },
-        // {
+          path: '/blueMetals',
+          name: 'blueMetals',
+          component: blueMetals
+        },
+        {
+          path: '/mSand',
+          name: 'mSand',
+          component: mSand
+        },
+        {
 
-        //   path: '/paverblocks',
-        //   name: 'paverblocks',
-        //   component: paverblocks
-        // },
+          path: '/paverblocks',
+          name: 'paverblocks',
+          component: paverblocks
+        },
 
-        // {
-        //   path: '/architectural',
-        //   name: 'architectural',
-        //   component: architectural
-        // },
-        // {
+        {
+          path: '/architectural',
+          name: 'architectural',
+          component: architectural
+        },
+        {
 
-        //   path: '/construction',
-        //   name: 'construction',
-        //   component: construction
-        // },
-        // {
-        //   path: '/transportation',
-        //   name: 'transportation',
-        //   component: transportation
-        // },
-        // {
+          path: '/construction',
+          name: 'construction',
+          component: construction
+        },
+        {
+          path: '/transportation',
+          name: 'transportation',
+          component: transportation
+        },
+        {
 
-        //   path: '/vendors',
-        //   name: 'vendors',
-        //   component: vendors
-        // },
+          path: '/vendors',
+          name: 'vendors',
+          component: vendors
+        },
       ]
     }
     //       {

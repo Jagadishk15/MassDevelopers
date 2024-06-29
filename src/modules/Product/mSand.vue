@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
     <div>
         <div class="h-title">
             <p class="c-name">M Sand</p>
@@ -22,16 +22,16 @@
                 <div class="img-alignp">
                     <div class="imgrows">
                         <div class="column">
-                            <img src="@/assets/Img/images/image 190.svg" style="width:100%">
+                            <img src="@/assets/Img/images/image190.svg" style="width:100%">
 
-                            <img src="@/assets/Img/images/image 187.svg" style="width:60%;float: inline-end">
+                            <img src="@/assets/Img/images/image187.svg" style="width:60%;float: inline-end">
 
 
                         </div>
                         <div class="column">
-                            <img src="@/assets/Img/images/image 186.svg" style="width:60%;float: inline-start;">
+                            <img src="@/assets/Img/images/image186.svg" style="width:60%;float: inline-start;">
 
-                            <img src="@/assets/Img/images/image 188.svg" style="width:100%">
+                            <img src="@/assets/Img/images/image188.svg" style="width:100%">
 
 
                         </div>
@@ -584,28 +584,5 @@ export default defineComponent({
             font-size: 15px;
         }
     }
-}
-
-//</style> -->
-<template>
-    <p>sas</p>
-</template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({
-
-    setup() {
-        return {
-
-        }
-    }
-
-})
-</script>
-
-<style lang="scss" scoped>
-.tab-icon {
-    width: 30px;
 }
 </style>

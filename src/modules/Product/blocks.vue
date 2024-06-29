@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
     <div>
         <div class="h-title">
             <p class="c-name">Blocks</p>
@@ -36,7 +36,7 @@
                 </p>
                 <div class="contain1"></div>
             </div>
-            <div class="aligntxtc my-5 py-5" style="text-align: center;">
+            <!-- <div class="aligntxtc my-5 py-5" style="text-align: center;">
                 <b-row align-h="between my-5">
                     <b-col cols="4">Glass Blocks</b-col>
                     <b-col cols="4">Solid Concrete Blocks</b-col>
@@ -73,20 +73,20 @@
                     <b-col cols="4">Cinder Blocks</b-col>
                 </b-row>
 
-            </div>
+            </div> -->
             <div class="img-align">
                 <div class="imgrows">
                     <div class="column">
-                        <img src="@/assets/Img/images/image 197.png" style="width:100%">
+                        <img src="@/assets/Img/images/image197.png" style="width:100%">
 
-                        <img src="@/assets/Img/images/image 20.svg" style="width:100%">
+                        <img src="@/assets/Img/images/image20.svg" style="width:100%">
 
 
                     </div>
                     <div class="column">
-                        <img src="@/assets/Img/images/image 206.svg" style="width:100%">
+                        <img src="@/assets/Img/images/image206.svg" style="width:100%">
 
-                        <img src="@/assets/Img/images/image 27.svg" style="width:100%">
+                        <img src="@/assets/Img/images/image27.svg" style="width:100%">
 
 
                     </div>
@@ -621,26 +621,4 @@ export default defineComponent({
     }
 }
 
-//</style> -->
-<template>
-    <p>sas</p>
-</template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({
-
-    setup() {
-        return {
-
-        }
-    }
-
-})
-</script>
-
-<style lang="scss" scoped>
-.tab-icon {
-    width: 30px;
-}
-</style>
+//</style>

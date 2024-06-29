@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
     <div>
         <div class="h-title">
             <p class="c-name">Pavers Blocks</p>
@@ -41,24 +41,23 @@
                 <div class="img-alignp">
                     <div class="imgrows">
                         <div class="column">
-                            <img src="@/assets/Img/images/image 21.svg" style="width:100%; ">
-
-                            <img src="@/assets/Img/images/image 22.svg" style="width:100%">
-                            <img src="@/assets/Img/images/image 18.svg" style="width:100%">
-
-                        </div>
-                        <div class="column">
-                            <img src="@/assets/Img/images/image 14.svg" style="width:100%">
-                            <img src="@/assets/Img/images/image 15.svg" style="width:100%">
-                            <img src="@/assets/Img/images/image 24.svg" style="width:100%">
-
-
+                            <!-- <img src="@/assets/Img/images/image21.svg" style="width:100%; ">
+                            <img src="@/assets/Img/images/image22.svg" style="width:100%">
+                            <img src="@/assets/Img/images/image18.svg" style="width:100%"> -->
 
                         </div>
                         <div class="column">
-                            <img src="@/assets/Img/images/image 200.svg" style="width:100%">
-                            <img src="@/assets/Img/images/image 203.svg" style="width:100%">
-                            <img src="@/assets/Img/images/image 199.svg" style="width:100%">
+                            <!-- <img src="@/assets/Img/images/image14.svg" style="width:100%">
+                            <img src="@/assets/Img/images/image15.svg" style="width:100%">
+                            <img src="@/assets/Img/images/image24.svg" style="width:100%"> -->
+
+
+
+                        </div>
+                        <div class="column">
+                            <!-- <img src="@/assets/Img/images/image200.svg" style="width:100%"> -->
+                            <!-- <img src="@/assets/Img/images/image203.svg" style="width:100%"> -->
+                            <!-- <img src="@/assets/Img/images/image199.svg" style="width:100%"> -->
 
                         </div>
 
@@ -609,28 +608,5 @@ export default defineComponent({
             font-size: 15px;
         }
     }
-}
-
-//</style> -->
-<template>
-    <p>sas</p>
-</template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({
-
-    setup() {
-        return {
-
-        }
-    }
-
-})
-</script>
-
-<style lang="scss" scoped>
-.tab-icon {
-    width: 30px;
 }
 </style>

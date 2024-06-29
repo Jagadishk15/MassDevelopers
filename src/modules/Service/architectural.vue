@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
     <div>
         <div class="container1">
 
@@ -76,17 +76,17 @@ export default defineComponent({
                     topimage: [
                         {
 
-                            img: "/src/assets/Img/images/image 127.svg",
+                            img: "/src/assets/Img/images/image127.svg",
                             content: "Pon vidhyasharam : KG Block building"
                         },
                         {
 
-                            img: "/src/assets/Img/images/image 127.svg",
+                            img: "/src/assets/Img/images/image127.svg",
                             content: "Pon vidhyasharam : KG Block building"
                         },
                         {
 
-                            img: "/src/assets/Img/images/image 127.svg",
+                            img: "/src/assets/Img/images/image127.svg",
                             content: "Pon vidhyasharam : KG Block building"
                         },
 
@@ -94,12 +94,12 @@ export default defineComponent({
                     bottomimage: [
                         {
 
-                            img: "/src/assets/Img/images/image 127.svg",
+                            img: "/src/assets/Img/images/image127.svg",
                             content: "Pon vidhyasharam : KG Block building"
                         },
                         {
 
-                            img: "/src/assets/Img/images/image 127.svg",
+                            img: "/src/assets/Img/images/image127.svg",
                             content: "Pon vidhyasharam : KG Block building"
                         },
 
@@ -251,27 +251,5 @@ export default defineComponent({
     padding-bottom: 20px;
 
 
-}
-</style> -->
-<template>
-    <p>sas</p>
-</template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({
-
-    setup() {
-        return {
-
-        }
-    }
-
-})
-</script>
-
-<style lang="scss" scoped>
-.tab-icon {
-    width: 30px;
 }
 </style>

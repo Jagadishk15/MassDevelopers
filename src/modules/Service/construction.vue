@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
     <div>
         <div class="container1">
 
@@ -77,17 +77,17 @@ export default defineComponent({
                     topimage: [
                         {
 
-                            img: "/src/assets/Img/images/image 127.svg",
+                            img: "/src/assets/Img/images/image127.svg",
                             content: "Pon vidhyasharam : KG Block building"
                         },
                         {
 
-                            img: "/src/assets/Img/images/image 128.svg",
+                            img: "/src/assets/Img/images/image128.svg",
                             content: "Mahatma Gandhi Medical College"
                         },
                         {
 
-                            img: "/src/assets/Img/images/image 129.svg",
+                            img: "/src/assets/Img/images/image129.svg",
                             content: "Rajiv Gandhi Medical College"
                         },
 
@@ -95,12 +95,12 @@ export default defineComponent({
                     bottomimage: [
                         {
 
-                            img: "/src/assets/Img/images/image 130.svg",
+                            img: "/src/assets/Img/images/image130.svg",
                             content: "Sathya Sai Medical College"
                         },
                         {
 
-                            img: "/src/assets/Img/images/image 131.svg",
+                            img: "/src/assets/Img/images/image131.svg",
                             content: "PSP Medical College"
                         },
 
@@ -119,17 +119,17 @@ export default defineComponent({
                     topimage: [
                         {
 
-                            img: "/src/assets/Img/images/image 77.svg",
+                            img: "/src/assets/Img/images/image77.svg",
                             content: ""
                         },
                         {
 
-                            img: "/src/assets/Img/images/image 80.svg",
+                            img: "/src/assets/Img/images/image80.svg",
                             content: ""
                         },
                         {
 
-                            img: "/src/assets/Img/images/image 76.svg",
+                            img: "/src/assets/Img/images/image76.svg",
                             content: ""
                         },
 
@@ -137,12 +137,12 @@ export default defineComponent({
                     bottomimage: [
                         {
 
-                            img: "/src/assets/Img/images/image 79.svg",
+                            img: "/src/assets/Img/images/image79.svg",
                             content: ""
                         },
                         {
 
-                            img: "/src/assets/Img/images/image 81.svg",
+                            img: "/src/assets/Img/images/image81.svg",
                             content: ""
                         },
 
@@ -159,17 +159,17 @@ export default defineComponent({
                     topimage: [
                         {
 
-                            img: "/src/assets/Img/images/image 54.svg",
+                            img: "/src/assets/Img/images/image54.svg",
                             content: ""
                         },
                         {
 
-                            img: "/src/assets/Img/images/image 55.svg",
+                            img: "/src/assets/Img/images/image55.svg",
                             content: ""
                         },
                         {
 
-                            img: "/src/assets/Img/images/image 133.svg",
+                            img: "/src/assets/Img/images/image133.svg",
                             content: ""
                         },
 
@@ -177,12 +177,12 @@ export default defineComponent({
                     bottomimage: [
                         {
 
-                            img: "/src/assets/Img/images/image 132.svg",
+                            img: "/src/assets/Img/images/image132.svg",
                             content: ""
                         },
                         {
 
-                            img: "/src/assets/Img/images/image 134.svg",
+                            img: "/src/assets/Img/images/image134.svg",
                             content: ""
                         },
 
@@ -198,17 +198,17 @@ export default defineComponent({
                     topimage: [
                         {
 
-                            img: "/src/assets/Img/images/image 70.svg",
+                            img: "/src/assets/Img/images/image70.svg",
                             content: ""
                         },
                         {
 
-                            img: "/src/assets/Img/images/image 74.svg",
+                            img: "/src/assets/Img/images/image74.svg",
                             content: ""
                         },
                         {
 
-                            img: "/src/assets/Img/images/image 73.svg",
+                            img: "/src/assets/Img/images/image73.svg",
                             content: ""
                         },
 
@@ -216,12 +216,12 @@ export default defineComponent({
                     bottomimage: [
                         {
 
-                            img: "/src/assets/Img/images/image 71.svg",
+                            img: "/src/assets/Img/images/image71.svg",
                             content: ""
                         },
                         {
 
-                            img: "/src/assets/Img/images/image 67.svg",
+                            img: "/src/assets/Img/images/image67.svg",
                             content: ""
                         },
 
@@ -237,17 +237,17 @@ export default defineComponent({
                     topimage: [
                         {
 
-                            img: "/src/assets/Img/images/image 135.svg",
+                            img: "/src/assets/Img/images/image135.svg",
                             content: ""
                         },
                         {
 
-                            img: "/src/assets/Img/images/image 136.svg",
+                            img: "/src/assets/Img/images/image136.svg",
                             content: ""
                         },
                         {
 
-                            img: "/src/assets/Img/images/image 137.svg",
+                            img: "/src/assets/Img/images/image137.svg",
                             content: ""
                         },
 
@@ -255,12 +255,12 @@ export default defineComponent({
                     bottomimage: [
                         {
 
-                            img: "/src/assets/Img/images/image 62.svg",
+                            img: "/src/assets/Img/images/image62.svg",
                             content: ""
                         },
                         {
 
-                            img: "/src/assets/Img/images/image 58.svg",
+                            img: "/src/assets/Img/images/image58.svg",
                             content: ""
                         },
 
@@ -397,27 +397,5 @@ export default defineComponent({
     padding-bottom: 20px;
 
 
-}
-</style> -->
-<template>
-    <p>sas</p>
-</template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({
-
-    setup() {
-        return {
-
-        }
-    }
-
-})
-</script>
-
-<style lang="scss" scoped>
-.tab-icon {
-    width: 30px;
 }
 </style>

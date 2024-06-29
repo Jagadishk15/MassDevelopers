@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
     <div>
         <section>
             <div class="h-title">
@@ -61,52 +61,52 @@
                     <div class="displayalign">
                         <div class="mainrightalign">
                             <div class="servicecontainer" @click="$router.push({
-        name: 'paverblocks',
-        path: '/paverblocks'
-    })">
+                                name: 'paverblocks',
+                                path: '/paverblocks'
+                            })">
                                 <div class="imgconatain">
-                                    <img class="Simg" src="@/assets/Img/images/image 206.svg">
+                                    <img class="Simg" src="@/assets/Img/images/image206.svg">
                                     <div class="service-align">
                                         <p class="stitle">Paver Blocks</p>
-                                        <img class="navigate" src="@/assets/Img/images/image 38.png">
+                                        <img class="navigate" src="@/assets/Img/images/image38.png">
                                     </div>
                                 </div>
                             </div>
                             <div class="servicecontainersmall marginleftalignimg" @click="$router.push({
-        name: 'blueMetals',
-        path: '/blueMetals'
-    })">
+                                name: 'blueMetals',
+                                path: '/blueMetals'
+                            })">
                                 <div class="imgconatain">
-                                    <img class="Simg" src="@/assets/Img/images/image 206.svg">
+                                    <img class="Simg" src="@/assets/Img/images/image206.svg">
                                     <div class="service-align">
                                         <p class="stitle">Blue Metal</p>
-                                        <img class="navigate" src="@/assets/Img/images/image 38.png">
+                                        <img class="navigate" src="@/assets/Img/images/image38.png">
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="margintopalignimg">
                             <div class="servicecontainersmall" @click="$router.push({
-        name: 'mSand',
-        path: '/mSand'
-    })">
+                                name: 'mSand',
+                                path: '/mSand'
+                            })">
                                 <div class="imgconatain">
-                                    <img class="Simg" src="@/assets/Img/images/image 206.svg">
+                                    <img class="Simg" src="@/assets/Img/images/image206.svg">
                                     <div class="service-align">
                                         <p class="stitle">M Sand</p>
-                                        <img class="navigate" src="@/assets/Img/images/image 38.png">
+                                        <img class="navigate" src="@/assets/Img/images/image38.png">
                                     </div>
                                 </div>
                             </div>
                             <div class="servicecontainer" @click="$router.push({
-        name: 'blocks',
-        path: '/blocks'
-    })">
+                                name: 'blocks',
+                                path: '/blocks'
+                            })">
                                 <div class="imgconatain">
-                                    <img class="Simg" src="@/assets/Img/images/image 206.svg">
+                                    <img class="Simg" src="@/assets/Img/images/image206.svg">
                                     <div class="service-align">
                                         <p class="stitle">Blocks</p>
-                                        <img class="navigate" src="@/assets/Img/images/image 38.png">
+                                        <img class="navigate" src="@/assets/Img/images/image38.png">
                                     </div>
                                 </div>
                             </div>
@@ -126,7 +126,7 @@
                             materials based on aesthetics and cost. Picking the suitable material for your
                             project means enhancing and lengthening a project’s lifetime.</p>
 
-                        <img class="dpimage" src="@/assets/Img/images/image 29.png">
+                        <img class="dpimage" src="@/assets/Img/images/image29.png">
                     </div>
 
 
@@ -135,13 +135,13 @@
             <div>
                 <v-container>
                     <v-carousel>
-                
+
                         <v-carousel-item src="/src/assets/Img/images/image 93.svg" cover></v-carousel-item>
                         <v-carousel-item src="/src/assets/Img/images/image 94.svg" cover></v-carousel-item>
                         <v-carousel-item src="/src/assets/Img/images/image 91.svg" cover></v-carousel-item>
                         <v-carousel-item src="/src/assets/Img/images/image 911.svg" cover></v-carousel-item>
                     </v-carousel>
-                   
+
 
                 </v-container>
             </div>
@@ -150,7 +150,7 @@
                     compete with
                     its counterparts, in several departments of construction. </p>
             </div>
-           
+
         </b-container>
         <section>
             <div class="formbg">
@@ -198,25 +198,20 @@
             <div class="img-align mb-5">
                 <div class="imgrows">
                     <div class="column">
-                        <img src="@/assets/Img/images/image 98.png" style="width:100%">
+                        <img src="@/assets/Img/images/image98.png" style="width:100%">
 
-                        <img src="@/assets/Img/images/image 75.png" style="width:100%">
-
-                    </div>
-                    <div class="column">
-                        <img src="@/assets/Img/images/image 751.png" style="width:75%">
-
-                        <img src="@/assets/Img/images/image 101.png" style="width:75%">
-                        <img src="@/assets/Img/images/image 103.png" style="width:80%">
-
-                        <img src="@/assets/Img/images/image 102.png" style="width:100%">
-
-
+                        <img src="@/assets/Img/images/image75.png" style="width:100%">
 
                     </div>
                     <div class="column">
-                        <img src="@/assets/Img/images/image 99.png" style="width:70%">
-                        <img src="@/assets/Img/images/image 100.svg" style="width:70%">
+                        <img src="@/assets/Img/images/image751.png" style="width:75%">
+                        <img src="@/assets/Img/images/image101.png" style="width:75%">
+                        <img src="@/assets/Img/images/image103.png" style="width:80%">
+                        <img src="@/assets/Img/images/image102.png" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="@/assets/Img/images/image99.png" style="width:70%">
+                        <img src="@/assets/Img/images/image100.svg" style="width:70%">
                     </div>
 
                 </div>
@@ -304,7 +299,7 @@
 
             </div>
         </section>
-           
+
 
     </div>
     <section>
@@ -1469,27 +1464,5 @@ export default defineComponent({
             }
         }
     }
-}
-</style> -->
-<template>
-    <p>sas</p>
-</template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({
-
-    setup() {
-        return {
-
-        }
-    }
-
-})
-</script>
-
-<style lang="scss" scoped>
-.tab-icon {
-    width: 30px;
 }
 </style>

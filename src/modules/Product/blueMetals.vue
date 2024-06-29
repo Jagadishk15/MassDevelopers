@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
     <div>
         <div class="h-title">
             <p class="c-name">Blue Metals</p>
@@ -27,7 +27,7 @@
 
                 <div class="contain1"></div>
             </div>
-            <div class="aligntxtc my-5 py-5" style="text-align: center;">
+            <!-- <div class="aligntxtc my-5 py-5" style="text-align: center;">
                 <b-row align-h="start my-5">
                     <b-col cols="4">Strength and Durability</b-col>
                 </b-row>
@@ -51,20 +51,20 @@
                     <b-col cols="4">Versatility</b-col>
                     <b-col cols="4">Aesthetic Appeal</b-col>
                 </b-row>
-            </div>
+            </div> -->
             <div class="img-align">
                 <div class="imgrows">
                     <div class="column">
-                        <img src="@/assets/Img/images/image 19.svg" style="width:100%">
+                        <img src="@/assets/Img/images/image19.svg" style="width:100%">
 
-                        <img src="@/assets/Img/images/image 12.svg" style="width:60%;float: inline-end">
+                        <img src="@/assets/Img/images/image12.svg" style="width:60%;float: inline-end">
 
 
                     </div>
                     <div class="column">
-                        <img src="@/assets/Img/images/image 912.svg" style="width:60%">
+                        <img src="@/assets/Img/images/image912.svg" style="width:60%">
 
-                        <img src="@/assets/Img/images/image 1932.svg" style="width:100%">
+                        <img src="@/assets/Img/images/image1932.svg" style="width:100%">
 
 
                     </div>
@@ -597,28 +597,5 @@ export default defineComponent({
             font-size: 15px;
         }
     }
-}
-
-//</style> -->
-<template>
-    <p>sas</p>
-</template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({
-
-    setup() {
-        return {
-
-        }
-    }
-
-})
-</script>
-
-<style lang="scss" scoped>
-.tab-icon {
-    width: 30px;
 }
 </style>
