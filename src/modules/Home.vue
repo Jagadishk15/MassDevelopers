@@ -42,7 +42,10 @@
                 <b-col style="display: flex;
     justify-content: center;" v-for="item in servicelist" cols='12' sm="6" lg="3" md="4">
                     <div class="Cservice">
-                        <img class="serviceimg" :src="item.image">
+                        <!-- <img class="serviceimg" src="@/assets/Img/images/Rectangle29.png"> -->
+
+                        <img class="serviceimg" :src="`@/${item.image}`">
+                        {{ `@/${item.image}` }}
                         <div class="servicecontent">
                             <p class="serviceH">{{ item.title }}</p>
                             <p class="serviceD">Find out more</p>
@@ -136,10 +139,10 @@
                 <v-container>
                     <v-carousel>
 
-                        <v-carousel-item src="/src/assets/Img/images/image 93.svg" cover></v-carousel-item>
-                        <v-carousel-item src="/src/assets/Img/images/image 94.svg" cover></v-carousel-item>
-                        <v-carousel-item src="/src/assets/Img/images/image 91.svg" cover></v-carousel-item>
-                        <v-carousel-item src="/src/assets/Img/images/image 911.svg" cover></v-carousel-item>
+                        <v-carousel-item src="/src/assets/Img/images/image93.svg" cover></v-carousel-item>
+                        <v-carousel-item src="/src/assets/Img/images/image94.svg" cover></v-carousel-item>
+                        <v-carousel-item src="/src/assets/Img/images/image91.svg" cover></v-carousel-item>
+                        <v-carousel-item src="/src/assets/Img/images/image911.svg" cover></v-carousel-item>
                     </v-carousel>
 
 
@@ -357,22 +360,22 @@ export default defineComponent({
         const servicelist = ref([
             {
                 title: 'Construction of Buildings and Roads',
-                image: '/src/assets/Img/images/Rectangle29.png',
+                image: 'assets/Img/images/Rectangle29.png',
                 route: 'construction'
             },
             {
                 title: 'Architectural and Structural design',
-                image: '/src/assets/Img/images/Rectangle30.png',
+                image: 'assets/Img/images/Rectangle30.png',
                 route: 'architectural'
             },
             {
                 title: 'Coordination with PMC and Vendors',
-                image: '/src/assets/Img/images/Rectangle31.png',
+                image: 'assets/Img/images/Rectangle31.png',
                 route: 'vendors'
             },
             {
                 title: 'Transport Services',
-                image: '/src/assets/Img/images/transportservice.png',
+                image: 'assets/Img/images/transportservice.png',
                 route: 'transportation'
             }
         ]);
