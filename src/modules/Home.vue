@@ -357,22 +357,22 @@ export default defineComponent({
         const servicelist = ref([
             {
                 title: 'Construction of Buildings and Roads',
-                image: '@/assets/Img/images/Rectangle29.png',
+                image: '/src/assets/Img/images/Rectangle29.png',
                 route: 'construction'
             },
             {
                 title: 'Architectural and Structural design',
-                image: '@/assets/Img/images/Rectangle30.png',
+                image: '/src/assets/Img/images/Rectangle30.png',
                 route: 'architectural'
             },
             {
                 title: 'Coordination with PMC and Vendors',
-                image: '@/assets/Img/images/Rectangle31.png',
+                image: '/src/assets/Img/images/Rectangle31.png',
                 route: 'vendors'
             },
             {
                 title: 'Transport Services',
-                image: '@/assets/Img/images/transportservice.png',
+                image: '/src/assets/Img/images/transportservice.png',
                 route: 'transportation'
             }
         ]);
