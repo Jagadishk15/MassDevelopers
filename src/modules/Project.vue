@@ -95,7 +95,7 @@
         </b-container>
 
     </div>
-    <!-- <contactUS /> -->
+    <contactUS />
 
 </template>
 
