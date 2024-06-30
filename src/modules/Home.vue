@@ -42,10 +42,10 @@
                 <b-col style="display: flex;
     justify-content: center;" v-for="item in servicelist" cols='12' sm="6" lg="3" md="4">
                     <div class="Cservice">
-                        <img class="serviceimg" src="@/assets/Img/images/Rectangle29.png">
+                        <!-- <img class="serviceimg" src="@/assets/Img/images/Rectangle29.png"> -->
 
-                        <!-- <img class="serviceimg" :src="`@/${item.image}`"> -->
-                        {{ `@/${item.image}` }}
+                        <img class="serviceimg" :src="`${item.image}`">
+                        <!-- {{ `@/${item.image}` }} -->
                         <div class="servicecontent">
                             <p class="serviceH">{{ item.title }}</p>
                             <p class="serviceD">Find out more</p>
@@ -321,6 +321,7 @@ import TextField from '@/components/FormComponents/TextInput.vue';
 import Dropdown from '@/components/FormComponents/Dropdown.vue';
 
 import TextArea from '@/components/FormComponents/TextArea.vue';
+import { required } from '@vee-validate/rules';
 
 
 export default defineComponent({
@@ -360,22 +361,22 @@ export default defineComponent({
         const servicelist = ref([
             {
                 title: 'Construction of Buildings and Roads',
-                image: 'assets/Img/images/Rectangle29.png',
+                image: new URL('@/assets/Img/images/Rectangle29.png', import.meta.url).href,
                 route: 'construction'
             },
             {
                 title: 'Architectural and Structural design',
-                image: 'assets/Img/images/Rectangle30.png',
+                image: new URL('@/assets/Img/images/Rectangle30.png', import.meta.url).href,
                 route: 'architectural'
             },
             {
                 title: 'Coordination with PMC and Vendors',
-                image: 'assets/Img/images/Rectangle31.png',
+                image: new URL('@/assets/Img/images/Rectangle31.png', import.meta.url).href,
                 route: 'vendors'
             },
             {
                 title: 'Transport Services',
-                image: 'assets/Img/images/transportservice.png',
+                image: new URL('@/assets/Img/images/transportservice.png', import.meta.url).href,
                 route: 'transportation'
             }
         ]);
