@@ -42,9 +42,9 @@
                 <b-col style="display: flex;
     justify-content: center;" v-for="item in servicelist" cols='12' sm="6" lg="3" md="4">
                     <div class="Cservice">
-                        <!-- <img class="serviceimg" src="@/assets/Img/images/Rectangle29.png"> -->
+                        <img class="serviceimg" src="@/assets/Img/images/Rectangle29.png">
 
-                        <img class="serviceimg" :src="`@/${item.image}`">
+                        <!-- <img class="serviceimg" :src="`@/${item.image}`"> -->
                         {{ `@/${item.image}` }}
                         <div class="servicecontent">
                             <p class="serviceH">{{ item.title }}</p>
