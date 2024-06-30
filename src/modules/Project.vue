@@ -105,14 +105,14 @@ import Content from '@/components/headercontent.vue'
 import designheadercontent from '@/components/designHeaderContent.vue'
 
 import groupimage from '@/components/groupimage.vue'
-// import contactUS from '@/components/contactUs.vue'
+import contactUS from '@/components/contactUs.vue'
 
 
 export default defineComponent({
     components: {
         Content,
         groupimage,
-        // contactUS,
+        contactUS,
         designheadercontent
     },
     setup() {

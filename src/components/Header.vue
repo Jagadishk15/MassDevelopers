@@ -208,6 +208,7 @@ export default defineComponent({
     right: 1%;
     top: 8%;
     width: 200px;
+    cursor: pointer;
 }
 
 .mobiletoggle div {
