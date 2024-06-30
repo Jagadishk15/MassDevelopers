@@ -137,7 +137,7 @@
             <div>
                 <v-container>
                     <v-carousel>
-                        new URL('@/assets/Img/images/Rectangle30.png', import.meta.url).href
+                        <!-- new URL('@/assets/Img/images/Rectangle30.png', import.meta.url).href -->
                         <!-- <v-carousel-item :src="new URL('@/assets/Img/images/Rectangle30.png', import.meta.url).href"
                             cover></v-carousel-item> -->
                         <v-carousel-item v-for="(imageSrc, index) in imageSrcs" :key="index" :src="imageSrc" cover>
@@ -228,7 +228,9 @@
 
 
         <b-container class="mt-5">
-            <div>
+            <div style="
+    margin-left: 30px;
+">
                 <div class="careerh">
 
 
@@ -395,16 +397,16 @@ export default defineComponent({
             window.scrollTo(0, 0);
         });
 
-         const images = [
-      '/src/assets/Img/images/image93.svg',
-      '/src/assets/Img/images/image94.svg',
-      '/src/assets/Img/images/image91.svg',
-      '/src/assets/Img/images/image911.svg'
-    ];
+        const images = [
+            '@/assets/Img/images/image93.svg',
+            '@/assets/Img/images/image94.svg',
+            '@/assets/Img/images/image91.svg',
+            '@/assets/Img/images/image911.svg'
+        ];
 
-    const imageSrcs = computed(() => 
-      images.map(image => new URL(image, import.meta.url).href)
-    );
+        const imageSrcs = computed(() =>
+            images.map(image => new URL(image, import.meta.url).href)
+        );
 
 
         return {
