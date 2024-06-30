@@ -76,31 +76,26 @@ export default defineComponent({
                     uicontainer: false,
                     topimage: [
                         {
-
-                            img: "/src/assets/Img/images/image127.svg",
+                            img: new URL('@/assets/Img/images/image127.svg', import.meta.url).href,
                             content: "Pon vidhyasharam : KG Block building"
                         },
                         {
-
-                            img: "/src/assets/Img/images/image128.svg",
+                            img: new URL('@/assets/Img/images/image128.svg', import.meta.url).href,
                             content: "Mahatma Gandhi Medical College"
                         },
                         {
-
-                            img: "/src/assets/Img/images/image129.svg",
+                            img: new URL('@/assets/Img/images/image129.svg', import.meta.url).href,
                             content: "Rajiv Gandhi Medical College"
                         },
 
                     ],
                     bottomimage: [
                         {
-
-                            img: "/src/assets/Img/images/image130.svg",
+                            img: new URL('@/assets/Img/images/image130.svg', import.meta.url).href,
                             content: "Sathya Sai Medical College"
                         },
                         {
-
-                            img: "/src/assets/Img/images/image131.svg",
+                            img: new URL('@/assets/Img/images/image131.svg', import.meta.url).href,
                             content: "PSP Medical College"
                         },
 
@@ -118,31 +113,26 @@ export default defineComponent({
                     uicontainer: true,
                     topimage: [
                         {
-
-                            img: "/src/assets/Img/images/image77.svg",
+                            img: new URL('@/assets/Img/images/image77.svg', import.meta.url).href,
                             content: ""
                         },
                         {
-
-                            img: "/src/assets/Img/images/image80.svg",
+                            img: new URL('@/assets/Img/images/image80.svg', import.meta.url).href,
                             content: ""
                         },
                         {
-
-                            img: "/src/assets/Img/images/image76.svg",
+                            img: new URL('@/assets/Img/images/image76.svg', import.meta.url).href,
                             content: ""
                         },
 
                     ],
                     bottomimage: [
                         {
-
-                            img: "/src/assets/Img/images/image79.svg",
+                            img: new URL('@/assets/Img/images/image79.svg', import.meta.url).href,
                             content: ""
                         },
                         {
-
-                            img: "/src/assets/Img/images/image81.svg",
+                            img: new URL('@/assets/Img/images/image81.svg', import.meta.url).href,
                             content: ""
                         },
 
@@ -158,31 +148,26 @@ export default defineComponent({
                     uicontainer: false,
                     topimage: [
                         {
-
-                            img: "/src/assets/Img/images/image54.svg",
+                            img: new URL('@/assets/Img/images/image54.svg', import.meta.url).href,
                             content: ""
                         },
                         {
-
-                            img: "/src/assets/Img/images/image55.svg",
+                            img: new URL('@/assets/Img/images/image55.svg', import.meta.url).href,
                             content: ""
                         },
                         {
-
-                            img: "/src/assets/Img/images/image133.svg",
+                            img: new URL('@/assets/Img/images/image133.svg', import.meta.url).href,
                             content: ""
                         },
 
                     ],
                     bottomimage: [
                         {
-
-                            img: "/src/assets/Img/images/image132.svg",
+                            img: new URL('@/assets/Img/images/image132.svg', import.meta.url).href,
                             content: ""
                         },
                         {
-
-                            img: "/src/assets/Img/images/image134.svg",
+                            img: new URL('@/assets/Img/images/image134.svg', import.meta.url).href,
                             content: ""
                         },
 
@@ -197,31 +182,26 @@ export default defineComponent({
                     uicontainer: true,
                     topimage: [
                         {
-
-                            img: "/src/assets/Img/images/image70.svg",
+                            img: new URL('@/assets/Img/images/image70.svg', import.meta.url).href,
                             content: ""
                         },
                         {
-
-                            img: "/src/assets/Img/images/image74.svg",
+                            img: new URL('@/assets/Img/images/image74.svg', import.meta.url).href,
                             content: ""
                         },
                         {
-
-                            img: "/src/assets/Img/images/image73.svg",
+                            img: new URL('@/assets/Img/images/image73.svg', import.meta.url).href,
                             content: ""
                         },
 
                     ],
                     bottomimage: [
                         {
-
-                            img: "/src/assets/Img/images/image71.svg",
+                            img: new URL('@/assets/Img/images/image71.svg', import.meta.url).href,
                             content: ""
                         },
                         {
-
-                            img: "/src/assets/Img/images/image67.svg",
+                            img: new URL('@/assets/Img/images/image67.svg', import.meta.url).href,
                             content: ""
                         },
 
@@ -236,31 +216,26 @@ export default defineComponent({
                     uicontainer: false,
                     topimage: [
                         {
-
-                            img: "/src/assets/Img/images/image135.svg",
+                            img: new URL('@/assets/Img/images/image135.svg', import.meta.url).href,
                             content: ""
                         },
                         {
-
-                            img: "/src/assets/Img/images/image136.svg",
+                            img: new URL('@/assets/Img/images/image136.svg', import.meta.url).href,
                             content: ""
                         },
                         {
-
-                            img: "/src/assets/Img/images/image137.svg",
+                            img: new URL('@/assets/Img/images/image137.svg', import.meta.url).href,
                             content: ""
                         },
 
                     ],
                     bottomimage: [
                         {
-
-                            img: "/src/assets/Img/images/image62.svg",
+                            img: new URL('@/assets/Img/images/image62.svg', import.meta.url).href,
                             content: ""
                         },
                         {
-
-                            img: "/src/assets/Img/images/image58.svg",
+                            img: new URL('@/assets/Img/images/image58.svg', import.meta.url).href,
                             content: ""
                         },
 

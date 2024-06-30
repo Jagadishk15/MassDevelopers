@@ -76,17 +76,17 @@ export default defineComponent({
                     topimage: [
                         {
 
-                            img: "/src/assets/Img/images/image127.svg",
+                            img: new URL('@/assets/Img/images/image127.svg', import.meta.url).href,
                             content: "Pon vidhyasharam : KG Block building"
                         },
                         {
 
-                            img: "/src/assets/Img/images/image127.svg",
+                            img: new URL('@/assets/Img/images/image127.svg', import.meta.url).href,
                             content: "Pon vidhyasharam : KG Block building"
                         },
                         {
 
-                            img: "/src/assets/Img/images/image127.svg",
+                            img: new URL('@/assets/Img/images/image127.svg', import.meta.url).href,
                             content: "Pon vidhyasharam : KG Block building"
                         },
 
@@ -94,12 +94,12 @@ export default defineComponent({
                     bottomimage: [
                         {
 
-                            img: "/src/assets/Img/images/image127.svg",
+                            img: new URL('@/assets/Img/images/image127.svg', import.meta.url).href,
                             content: "Pon vidhyasharam : KG Block building"
                         },
                         {
 
-                            img: "/src/assets/Img/images/image127.svg",
+                            img: new URL('@/assets/Img/images/image127.svg', import.meta.url).href,
                             content: "Pon vidhyasharam : KG Block building"
                         },
 

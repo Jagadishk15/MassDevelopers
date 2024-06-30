@@ -139,10 +139,10 @@
                 <v-container>
                     <v-carousel>
 
-                        <v-carousel-item src="/src/assets/Img/images/image93.svg" cover></v-carousel-item>
-                        <v-carousel-item src="/src/assets/Img/images/image94.svg" cover></v-carousel-item>
-                        <v-carousel-item src="/src/assets/Img/images/image91.svg" cover></v-carousel-item>
-                        <v-carousel-item src="/src/assets/Img/images/image911.svg" cover></v-carousel-item>
+                        <v-carousel-item src="@/assets/Img/images/image93.svg" cover></v-carousel-item>
+                        <v-carousel-item src="@/assets/Img/images/image94.svg" cover></v-carousel-item>
+                        <v-carousel-item src="@/assets/Img/images/image91.svg" cover></v-carousel-item>
+                        <v-carousel-item src="@/assets/Img/images/image911.svg" cover></v-carousel-item>
                     </v-carousel>
 
 
