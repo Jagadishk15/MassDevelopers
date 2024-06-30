@@ -160,7 +160,7 @@ export default defineComponent({
 
     position: absolute;
     bottom: 50%;
-    left: 12%;
+    left: 20%;
     border: solid 4px #442370;
     height: 30px;
     width: 30px;
@@ -204,6 +204,8 @@ export default defineComponent({
 }
 
 .container1 {
+
+
 
     position: relative;
     text-align: center;
@@ -310,5 +312,33 @@ export default defineComponent({
 
 .dcontaineralign {
     position: relative;
+}
+
+@media only screen and (max-width: 428px) {
+
+
+    .contain {
+
+        position: absolute;
+        bottom: 50%;
+        left: 55%;
+        border: solid 4px #442370;
+        height: 30px;
+        width: 30px;
+        rotate: 30deg;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contain {
+
+        position: absolute;
+        bottom: 50%;
+        left: 35%;
+        border: solid 4px #442370;
+        height: 30px;
+        width: 30px;
+        rotate: 30deg;
+    }
 }
 </style>
