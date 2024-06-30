@@ -137,11 +137,17 @@
             <div>
                 <v-container>
                     <v-carousel>
+                        new URL('@/assets/Img/images/Rectangle30.png', import.meta.url).href
+                        <!-- <v-carousel-item :src="new URL('@/assets/Img/images/Rectangle30.png', import.meta.url).href"
+                            cover></v-carousel-item> -->
+                        <v-carousel-item v-for="(imageSrc, index) in imageSrcs" :key="index" :src="imageSrc" cover>
+                        </v-carousel-item>
 
-                        <v-carousel-item src="/src/assets/Img/images/image93.svg" cover></v-carousel-item>
+
+                        <!-- <v-carousel-item src="/src/assets/Img/images/image93.svg" cover></v-carousel-item>
                         <v-carousel-item src="/src/assets/Img/images/image94.svg" cover></v-carousel-item>
                         <v-carousel-item src="/src/assets/Img/images/image91.svg" cover></v-carousel-item>
-                        <v-carousel-item src="/src/assets/Img/images/image911.svg" cover></v-carousel-item>
+                        <v-carousel-item src="/src/assets/Img/images/image911.svg" cover></v-carousel-item> -->
                     </v-carousel>
 
 
@@ -311,7 +317,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, h, onMounted } from 'vue';
+import { defineComponent, ref, h, onMounted, computed } from 'vue';
 import Content from '@/components/headercontent.vue'
 import groupimage from '@/components/groupimage.vue'
 import contactUS from '@/components/contactUs.vue'
@@ -388,7 +394,21 @@ export default defineComponent({
         onMounted(() => {
             window.scrollTo(0, 0);
         });
+
+         const images = [
+      '/src/assets/Img/images/image93.svg',
+      '/src/assets/Img/images/image94.svg',
+      '/src/assets/Img/images/image91.svg',
+      '/src/assets/Img/images/image911.svg'
+    ];
+
+    const imageSrcs = computed(() => 
+      images.map(image => new URL(image, import.meta.url).href)
+    );
+
+
         return {
+            imageSrcs,
             routetopage,
             servicelist,
             products,

@@ -203,11 +203,11 @@ export default defineComponent({
     position: absolute;
     background-color: #fff;
     z-index: 999;
-    padding: 7px;
+    padding: 22px;
     border-radius: 5px;
-    right: 4%;
-    top: 7%;
-    width: 150px;
+    right: 1%;
+    top: 8%;
+    width: 200px;
 }
 
 .mobiletoggle div {
@@ -302,7 +302,7 @@ export default defineComponent({
     }
 
     .mobiletoggle {
-        right: 10%;
+        right: 4%;
     }
 
     .mobiletoggle .notification-number-badge {
@@ -327,7 +327,7 @@ export default defineComponent({
 
 @media only screen and (max-width: 426px) {
     .mobiletoggle {
-        right: 16%;
+        right: 8%;
     }
 
     // .main-inner-screen {
@@ -415,7 +415,7 @@ export default defineComponent({
 .menu-txt {
     font-family: Roboto;
     margin: 0px 10px;
-    font-size: 14px;
+    font-size: 15px;
     color: #000000;
     font-weight: 500;
     cursor: pointer;
