@@ -398,10 +398,10 @@ export default defineComponent({
         });
 
         const images = [
-            '/Img/images/image93.svg',
-            '/Img/images/image94.svg',
-            '/Img/images/image91.svg',
-            '/Img/images/image911.svg'
+            '/src/assets/Img/images/image93.svg',
+            '/src/assets/Img/images/image94.svg',
+            '/src/assets/Img/images/image91.svg',
+            '/src/assets/Img/images/image911.svg'
         ];
 
         const imageSrcs = computed(() =>
