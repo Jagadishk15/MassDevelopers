@@ -32,7 +32,7 @@
                             query: { TabValue: 'Tab4' },
                         }),
                         (mobileoptionvisible = false)
-                        " class="d-flex align-items-center">
+                        " class="d-flex align-items-center py-2">
 
                         <!-- <div>
                         <img src="@/assets/Img/icons/mytask.svg" class="header-images" />
@@ -41,8 +41,8 @@
                     </div>
 
 
-                    <div class="d-flex align-items-center" @click="
-                        $router.push({ path: '/userdashboard' }),
+                    <div class="d-flex align-items-center py-2" @click="
+                        $router.push({ path: '/Project' }),
                         (mobileoptionvisible = false)
                         ">
                         <div>
@@ -50,8 +50,8 @@
                         </div>
                         <p class="menu-txt">Project</p>
                     </div>
-                    <div class="d-flex align-items-center" @click="
-                        $router.push({ path: '/Project' }),
+                    <div class="d-flex align-items-center py-2" @click="
+                        scrollToHeight(2300),
                         (mobileoptionvisible = false)
                         ">
                         <div>
@@ -59,8 +59,8 @@
                         </div>
                         <p class="menu-txt">Careers</p>
                     </div>
-                    <div class="d-flex align-items-center" @click="
-                        $router.push({ path: '/userdashboard' }),
+                    <div class="d-flex align-items-center py-2" @click="
+                        scrollToBottom,
                         (mobileoptionvisible = false)
                         ">
                         <div>
@@ -415,7 +415,7 @@ export default defineComponent({
 .menu-txt {
     font-family: Roboto;
     margin: 0px 10px;
-    font-size: 15px;
+    font-size: 17px;
     color: #000000;
     font-weight: 500;
     cursor: pointer;
