@@ -333,6 +333,7 @@ export default defineComponent({
     position: absolute;
     bottom: 50%;
     border: solid 4px #B88FEE;
+    left: -2%;
     height: 30px;
     width: 30px;
     rotate: 30deg;
@@ -342,7 +343,7 @@ export default defineComponent({
 
     position: absolute;
     bottom: 50%;
-    left: 20%;
+    right: 80%;
     border: solid 4px #B88FEE;
     height: 30px;
     width: 30px;

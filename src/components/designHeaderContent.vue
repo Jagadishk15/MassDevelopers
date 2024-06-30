@@ -80,6 +80,7 @@ export default defineComponent({
     position: absolute;
     bottom: 50%;
     border: solid 4px #B88FEE;
+    left: -2%;
     height: 30px;
     width: 30px;
     rotate: 30deg;
@@ -89,7 +90,7 @@ export default defineComponent({
 
     position: absolute;
     bottom: 50%;
-    left: 20%;
+    right: 80%;
     border: solid 4px #B88FEE;
     height: 30px;
     width: 30px;
@@ -111,4 +112,32 @@ export default defineComponent({
 
     margin: 30px;
 }
+
+
+
+@media only screen and (max-width: 428px) {
+    .containl {
+
+        position: absolute;
+        bottom: 50%;
+        border: solid 4px #B88FEE;
+        height: 30px;
+        left: -8%;
+        width: 30px;
+        rotate: 30deg;
+    }
+
+    .containr {
+
+        position: absolute;
+        bottom: 50%;
+        right: 20%;
+        border: solid 4px #B88FEE;
+        height: 30px;
+        width: 30px;
+        rotate: 30deg;
+    }
+}
+
+@media only screen and (max-width: 768px) {}
 </style>

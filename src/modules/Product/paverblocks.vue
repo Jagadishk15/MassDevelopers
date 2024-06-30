@@ -537,10 +537,39 @@ export default defineComponent({
     .contain1 {
         display: none;
     }
+
+    .servicefield {
+        justify-content: center
+    }
+
+    .containl {
+
+        position: absolute;
+        bottom: 50%;
+        border: solid 4px #B88FEE;
+        height: 30px;
+        left: -8%;
+        width: 30px;
+        rotate: 30deg;
+    }
+
+    .containr {
+
+        position: absolute;
+        bottom: 50%;
+        right: 20%;
+        border: solid 4px #B88FEE;
+        height: 30px;
+        width: 30px;
+        rotate: 30deg;
+    }
 }
 
 @media only screen and (max-width: 768px) {
 
+    .servicefield {
+        justify-content: center
+    }
 
     .wedo {
         height: auto;
@@ -612,4 +641,7 @@ export default defineComponent({
         }
     }
 }
-</style>
+
+
+
+//@media only screen and (max-width: 768px) {}</style>

@@ -66,7 +66,7 @@
 
                     </b-row>
 
-                    <b-row class="servicefield  my-5">
+                    <b-row class="servicefield   my-5">
                         <b-col cols='10' sm="10" md="3" lg="3" class="m-2">
                             <div class="spl">
                                 <div class="label-d-none label">
@@ -510,13 +510,42 @@ export default defineComponent({
         display: none;
     }
 
+    .servicefield {
+        justify-content: center
+    }
+
     .contain1 {
         display: none;
+    }
+
+    .containl {
+
+        position: absolute;
+        bottom: 50%;
+        border: solid 4px #B88FEE;
+        height: 30px;
+        left: -8%;
+        width: 30px;
+        rotate: 30deg;
+    }
+
+    .containr {
+
+        position: absolute;
+        bottom: 50%;
+        right: 20%;
+        border: solid 4px #B88FEE;
+        height: 30px;
+        width: 30px;
+        rotate: 30deg;
     }
 }
 
 @media only screen and (max-width: 768px) {
 
+    .servicefield {
+        justify-content: center
+    }
 
     .wedo {
         height: auto;
