@@ -137,7 +137,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
+import { defineComponent, ref, h, onMounted } from 'vue';
 import Content from '@/components/headercontent.vue'
 import groupimage from '@/components/groupimage.vue'
 import contactUS from '@/components/contactUs.vue'
@@ -257,6 +257,9 @@ export default defineComponent({
             } catch (error) {
                 alert(error);
             }
+        });
+        onMounted(() => {
+            window.scrollTo(0, 0);
         });
         return {
             productitem,

@@ -41,7 +41,7 @@
             <b-row>
                 <b-col style="display: flex;
     justify-content: center;" v-for="item in servicelist" cols='12' sm="6" lg="3" md="4">
-                    <div class="Cservice">
+                    <div class="Cservice" @click="routetopage(item.route)">
                         <!-- <img class="serviceimg" src="@/assets/Img/images/Rectangle29.png"> -->
 
                         <img class="serviceimg" :src="`${item.image}`">
@@ -49,8 +49,7 @@
                         <div class="servicecontent">
                             <p class="serviceH">{{ item.title }}</p>
                             <p class="serviceD">Find out more</p>
-                            <img class="arrowto" @click="routetopage(item.route)"
-                                src="@/assets/Img/images/construction.png">
+                            <img class="arrowto" src="@/assets/Img/images/construction.png">
 
                         </div>
                     </div>
@@ -139,10 +138,10 @@
                 <v-container>
                     <v-carousel>
 
-                        <v-carousel-item src="@/assets/Img/images/image93.svg" cover></v-carousel-item>
-                        <v-carousel-item src="@/assets/Img/images/image94.svg" cover></v-carousel-item>
-                        <v-carousel-item src="@/assets/Img/images/image91.svg" cover></v-carousel-item>
-                        <v-carousel-item src="@/assets/Img/images/image911.svg" cover></v-carousel-item>
+                        <v-carousel-item src="/src/assets/Img/images/image93.svg" cover></v-carousel-item>
+                        <v-carousel-item src="/src/assets/Img/images/image94.svg" cover></v-carousel-item>
+                        <v-carousel-item src="/src/assets/Img/images/image91.svg" cover></v-carousel-item>
+                        <v-carousel-item src="/src/assets/Img/images/image911.svg" cover></v-carousel-item>
                     </v-carousel>
 
 
@@ -240,7 +239,7 @@
 
                 </div>
 
-                <div class="careerd  mb-5">
+                <div class="careerd ml-3  mb-5">
                     <div class="d-flex">
                         <h5>The Company’s endeavour towards-</h5>
                         <div class='contain mt-2'></div>
@@ -312,7 +311,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, h } from 'vue';
+import { defineComponent, ref, h, onMounted } from 'vue';
 import Content from '@/components/headercontent.vue'
 import groupimage from '@/components/groupimage.vue'
 import contactUS from '@/components/contactUs.vue'
@@ -386,6 +385,9 @@ export default defineComponent({
                 name: routes
             })
         }
+        onMounted(() => {
+            window.scrollTo(0, 0);
+        });
         return {
             routetopage,
             servicelist,

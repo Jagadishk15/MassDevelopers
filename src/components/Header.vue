@@ -122,7 +122,7 @@ export default defineComponent({
             router.push({
                 path: '/'
             })
-            alert(JSON.stringify(route.path))
+            // alert(JSON.stringify(route.path))
             // if (route.path == '/') {
             //     if (scrollableElement.value) {
             //         scrollableElement.value.scrollTop = height;
@@ -138,6 +138,7 @@ export default defineComponent({
                 }
             }
         })
+
         return {
             scrollToHeight,
             scrollableElement,

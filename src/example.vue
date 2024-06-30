@@ -201,9 +201,9 @@
     </div>
 
 </template>-->
-    
+
 <script lang="ts">
-// import { defineComponent, ref } from 'vue'
+// import { defineComponent, ref, h, onMounted } from 'vue';
 // import Headerlayout from '@/components/Masters/HeaderLayout.vue'
 // import BacktoPage from '@/components/FormComponents/BacktoMaster.vue'
 // import ContactDetails from '../../../components/MastersforInventory/contactdetails.vue'
@@ -341,5 +341,3 @@
 
 // })
 // </script>
-
-

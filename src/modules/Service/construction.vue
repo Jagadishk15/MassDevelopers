@@ -28,7 +28,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
+import { defineComponent, ref, h, onMounted } from 'vue';
 import Content from '@/components/headercontent.vue'
 import designheadercontent from '@/components/designHeaderContent.vue'
 
@@ -246,6 +246,9 @@ export default defineComponent({
 
             ]
         )
+        onMounted(() => {
+            window.scrollTo(0, 0);
+        });
         return {
             headercontent,
             products,

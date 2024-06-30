@@ -9,26 +9,110 @@
         </div>
     </div>
 
+
     <div>
-
         <b-container>
-            <div v-for="item in headercontent">
-                <designheadercontent :headercontent="item" />
+            <div class="txtheader">
+                <div class="dcontaineralign">
+                    <p class="txt-title">
+                        Ajax Concrete Mixer
+                    </p>
+                    <div class='containl'>
 
-                <groupimage :topimage="item?.topimage" :bottomimage="item?.bottomimage" />
-                <p class="endtxt">"</p>
+                    </div>
+                    <!-- <div class='containr' v-else>
 
+                    </div> -->
+                </div>
+                <p class="txt-d">
+                    Ajax Engineering is a well-known manufacturer of construction equipment, including concrete mixers.
+                    The Ajax concrete mixer is a popular product known for its robust design and efficient performance.
+                </p>
+                <p class="txt-d mt-5">
+                    Ajax concrete mixers are available in various capacities to meet different project requirements.
+                    Capacities typically range from small portable mixers for on-site construction to larger units
+                    suitable for
+                    commercial projects. Ajax concrete mixers incorporate advanced mixing technology to ensure a
+                    consistent and homogeneous mix of concrete. This is crucial for achieving the desired strength and
+                    quality of the concrete.
+                </p>
+                <p class="txt-d mt-5">
+                    Ajax Engineering emphasizes durability in the construction of its mixers. The components are built
+                    to
+                    withstand the rigors of construction sites, ensuring a long service life even under challenging
+                    conditions.
+                    These are versatile and suitable for a range of applications, including residential construction,
+                    commercial projects, infrastructure development, and more
+                </p>
             </div>
+            <div class="webkitcenter">
+                <div class="img-alignp">
+                    <div class="imgrows">
+                        <div class="column">
+                            <img src="@/assets/Img/images/image1733.svg" style="width:100%">
+                            <img src="@/assets/Img/images/image1766.svg" style="width:100%;float: inline-end">
+                        </div>
+                        <div class="column">
+                            <img src="@/assets/Img/images/image1744.svg" style="width:100%">
+                            <img src="@/assets/Img/images/image1755.svg" style="width:100%;float: inline-start;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="endtxt">"</p>
 
+
+            <div class="txtheader">
+                <div class="dcontaineralign">
+                    <p class="txt-title">
+                        Transport Services
+                    </p>
+
+                    <div class='containr'>
+
+                    </div>
+                </div>
+                <p class="txt-d">
+                    Transportation services play a critical role in the efficient movement of materials from one
+                    location to
+                    another. In the context of a transportation services company, the range of services offered can vary
+                    widely.
+                </p>
+                <p class="txt-d">
+
+                    Transportation of oversized and heavy machinery used in construction, manufacturing, or other
+                    industries. Transportation services companies may offer a combination of these services or
+                    specialize
+                    in specific areas based on their expertise and market demands. The industry continually evolves with
+                    advancements in technology, sustainability practices, and regulatory changes
+                </p>
+            </div>
+            <div class="webkitcenter mb-5">
+                <div class="img-alignp">
+                    <div class="imgrows">
+                        <div class="column" style="
+    align-content: center;
+">
+                            <img src="@/assets/Img/images/image1811.svg" style="width:100%">
+                            <img src="@/assets/Img/images/image178.svg" style="width:100%;float: inline-end">
+                        </div>
+                        <div class="column">
+                            <img src="@/assets/Img/images/image1799.svg" style="width:100%">
+                            <img src="@/assets/Img/images/image1800.svg" style="width:100%;float: inline-start;">
+                            <img src="@/assets/Img/images/image1777.svg" style="width:100%;float: inline-start;">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </b-container>
-
     </div>
     <contactUS />
 
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
+import { defineComponent, ref, h, onMounted } from 'vue';
 import Content from '@/components/headercontent.vue'
 import designheadercontent from '@/components/designHeaderContent.vue'
 
@@ -76,17 +160,17 @@ export default defineComponent({
                     topimage: [
                         {
 
-                            img: new URL('@/assets/Img/images/image127.svg', import.meta.url).href, 
+                            img: new URL('@/assets/Img/images/image127.svg', import.meta.url).href,
                             content: "Pon vidhyasharam : KG Block building"
                         },
                         {
 
-                            img: new URL('@/assets/Img/images/image127.svg', import.meta.url).href, 
+                            img: new URL('@/assets/Img/images/image127.svg', import.meta.url).href,
                             content: "Pon vidhyasharam : KG Block building"
                         },
                         {
 
-                            img: new URL('@/assets/Img/images/image127.svg', import.meta.url).href, 
+                            img: new URL('@/assets/Img/images/image127.svg', import.meta.url).href,
                             content: "Pon vidhyasharam : KG Block building"
                         },
 
@@ -94,12 +178,12 @@ export default defineComponent({
                     bottomimage: [
                         {
 
-                            img: new URL('@/assets/Img/images/image127.svg', import.meta.url).href, 
+                            img: new URL('@/assets/Img/images/image127.svg', import.meta.url).href,
                             content: "Pon vidhyasharam : KG Block building"
                         },
                         {
 
-                            img: new URL('@/assets/Img/images/image127.svg', import.meta.url).href, 
+                            img: new URL('@/assets/Img/images/image127.svg', import.meta.url).href,
                             content: "Pon vidhyasharam : KG Block building"
                         },
 
@@ -125,6 +209,9 @@ export default defineComponent({
                 // },
             ]
         )
+        onMounted(() => {
+            window.scrollTo(0, 0);
+        });
         return {
             headercontent,
             products,
@@ -251,5 +338,79 @@ export default defineComponent({
     padding-bottom: 20px;
 
 
+}
+
+
+
+///
+.txt-title {
+    font-family: Roboto;
+    margin: 0px 10px;
+    font-size: 18px;
+    color: black;
+    // font-style: italic;
+    font-weight: 600;
+    // line-height: 28.13px;
+    text-align: left;
+    padding-bottom: 20px;
+
+
+}
+
+// .endtxt {
+//     font-family: Open Sans Hebrew;
+//     margin-top: 20px;
+//     font-size: 78px;
+//     color: #9747FF;
+//     // font-style: italic;
+//     font-weight: 600;
+//     // line-height: 28.13px;
+//     text-align: center;
+//     padding-bottom: 20px;
+// }
+
+.dcontaineralign {
+    position: relative;
+}
+
+.containl {
+
+    position: absolute;
+    bottom: 50%;
+    border: solid 4px #B88FEE;
+    height: 30px;
+    width: 30px;
+    rotate: 30deg;
+}
+
+.containr {
+
+    position: absolute;
+    bottom: 50%;
+    left: 20%;
+    border: solid 4px #B88FEE;
+    height: 30px;
+    width: 30px;
+    rotate: 30deg;
+}
+
+.txt-d {
+    font-family: Roboto;
+    margin: 0px 10px;
+    font-size: 14px;
+    color: #8F8F8F;
+    // font-style: italic;
+    font-weight: 400;
+    line-height: 23.13px;
+    text-align: left;
+}
+
+.txtheader {
+
+    margin: 30px;
+}
+
+.webkitcenter {
+    text-align: -webkit-center;
 }
 </style>

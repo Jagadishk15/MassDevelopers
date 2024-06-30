@@ -12,13 +12,52 @@
     <div>
 
         <b-container>
-            <div v-for="item in headercontent">
-                <designheadercontent :headercontent="item" />
+            <div class="txtheader">
+                <div class="dcontaineralign">
+                    <p class="txt-title">
+                        Coordination with PMC
+                    </p>
+                    <div class='containl'>
 
-                <groupimage :topimage="item?.topimage" :bottomimage="item?.bottomimage" />
-                <p class="endtxt">"</p>
+                    </div>
+                    <!-- <div class='containr' v-else>
 
+                    </div> -->
+                </div>
+                <p class="txt-d mt-5">
+                    Coordination with a PMC is essential for ensuring the successful planning, execution, and completion
+                    of
+                    a project.  At the initiation phase, collaboration with the PMC involves clearly defining project
+                    objectives,
+                    scope, deliverables, and timelines. This includes aligning the PMC with the organization's goals and
+                    ensuring a shared understanding of project success criteria.
+                </p>
+                <p class="txt-d mt-5">
+                    Collaborate with the PMC in resource planning, including human resources, equipment, and materials.
+                    Coordination ensures that resource allocation aligns with the project timeline and budget,
+                    preventing
+                    potential bottlenecks.
+                </p>
+                <p class="txt-d mt-5">
+                    Coordination with the PMC is vital during the budgeting phase. Regular updates and communication
+                    help in monitoring and controlling project costs, ensuring that expenditures align with the planned
+                    budget.
+                </p>
+
+
+                <p class="txt-d mt-5">
+                    Establish a communication plan with the PMC to ensure effective information flow between project
+                    teams, stakeholders, and leadership. Clear channels of communication help in addressing issues
+                    promptly and keeping all parties informed
+                </p>
+                <p class="txt-d mt-5">
+                    Effective coordination with a PMC requires open communication, a collaborative mindset, and a shared
+                    commitment to project success. Regular meetings, status updates, and a proactive approach to issue
+                    resolution contribute to a successful partnership between the organization and the PMC.
+                </p>
             </div>
+
+            <p class="endtxt">"</p>
 
         </b-container>
 
@@ -28,7 +67,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
+import { defineComponent, ref, h, onMounted } from 'vue';
 import Content from '@/components/headercontent.vue'
 import designheadercontent from '@/components/designHeaderContent.vue'
 
@@ -125,6 +164,9 @@ export default defineComponent({
                 // },
             ]
         )
+        onMounted(() => {
+            window.scrollTo(0, 0);
+        });
         return {
             headercontent,
             products,
@@ -251,5 +293,75 @@ export default defineComponent({
     padding-bottom: 20px;
 
 
+}
+
+
+
+///
+.txt-title {
+    font-family: Roboto;
+    margin: 0px 10px;
+    font-size: 18px;
+    color: black;
+    // font-style: italic;
+    font-weight: 600;
+    // line-height: 28.13px;
+    text-align: left;
+    padding-bottom: 20px;
+
+
+}
+
+// .endtxt {
+//     font-family: Open Sans Hebrew;
+//     margin-top: 20px;
+//     font-size: 78px;
+//     color: #9747FF;
+//     // font-style: italic;
+//     font-weight: 600;
+//     // line-height: 28.13px;
+//     text-align: center;
+//     padding-bottom: 20px;
+// }
+
+.dcontaineralign {
+    position: relative;
+}
+
+.containl {
+
+    position: absolute;
+    bottom: 50%;
+    border: solid 4px #B88FEE;
+    height: 30px;
+    width: 30px;
+    rotate: 30deg;
+}
+
+.containr {
+
+    position: absolute;
+    bottom: 50%;
+    left: 20%;
+    border: solid 4px #B88FEE;
+    height: 30px;
+    width: 30px;
+    rotate: 30deg;
+}
+
+.txt-d {
+    font-family: Roboto;
+    margin: 0px 10px;
+    font-size: 14px;
+    color: #8F8F8F;
+    // font-style: italic;
+    font-weight: 400;
+    line-height: 23.13px;
+    text-align: left;
+}
+
+.txtheader {
+
+    margin: 30px;
 }
 </style>
