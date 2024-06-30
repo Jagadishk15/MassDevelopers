@@ -27,9 +27,9 @@
 
                     <div @click="
                         $router.push({
-                            name: '/',
                             path: '/',
-                            query: { TabValue: 'Tab4' },
+
+
                         }),
                         (mobileoptionvisible = false)
                         " class="d-flex align-items-center py-2">
