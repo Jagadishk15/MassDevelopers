@@ -95,7 +95,9 @@
         </b-container>
 
     </div>
-    <contactUS />
+    <section>
+        <contactUS class="my-5" />
+    </section>
 
 </template>
 
@@ -116,6 +118,8 @@ export default defineComponent({
         designheadercontent
     },
     setup() {
+
+
         const products = ref();
         const responsiveOptions = ref([
             {

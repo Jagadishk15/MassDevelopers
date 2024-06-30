@@ -388,6 +388,8 @@ export default defineComponent({
             }
         ]);
         const routetopage = (routes) => {
+            scrollTop()
+
             router.push({
                 path: '/' + routes,
                 name: routes
@@ -407,9 +409,21 @@ export default defineComponent({
         const imageSrcs = computed(() =>
             images.map(image => new URL(image, import.meta.url).href)
         );
+        const scrollableElement: any = ref(null);
 
+        const scrollTop = () => {
+            // if (scrollableElement.value) {
+            //     scrollableElement.value.scrollTop = scrollableElement.value.scrollHeight;
+            // }
+            // mobileoptionvisible.value = false
+            if (scrollableElement.value) {
+                scrollableElement.value.scrollTop = 0;
+            }
+
+        };
 
         return {
+            scrollTop,
             imageSrcs,
             routetopage,
             servicelist,

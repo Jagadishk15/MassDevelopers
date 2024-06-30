@@ -6,13 +6,10 @@
             <div class="h-align
         ">
 
-                <p class="h-content" @click="$router.push({
-                    path: '/'
-                })">Home</p>
-                <p class="h-content" @click="$router.push({
-                    path: '/Project'
-                })">PROJECTS</p>
-                <p class="h-content" @click="scrollToHeight(2300)">CAREERS</p>
+                <p class="h-content" @click="scrollTop">Home</p>
+
+                <p class="h-content" @click="scrollTopproject">PROJECTS</p>
+                <p class="h-content" @click="scrollToHeight(4300)">CAREERS</p>
                 <p class="h-content" @click="scrollToBottom">CONTACT</p>
 
             </div>
@@ -25,13 +22,7 @@
                 <div class="mobiletoggle" v-if="mobileoptionvisible">
 
 
-                    <div @click="
-                        $router.push({
-                            path: '/',
-
-
-                        }),
-                        (mobileoptionvisible = false)
+                    <div @click="scrollTop
                         " class="d-flex align-items-center py-2">
 
                         <!-- <div>
@@ -41,9 +32,7 @@
                     </div>
 
 
-                    <div class="d-flex align-items-center py-2" @click="
-                        $router.push({ path: '/Project' }),
-                        (mobileoptionvisible = false)
+                    <div class="d-flex align-items-center py-2" @click="scrollTopproject
                         ">
                         <div>
                             <!-- <img src="@/assets/Img/icons/settingimg.svg" class="header-images" /> -->
@@ -51,17 +40,16 @@
                         <p class="menu-txt">Project</p>
                     </div>
                     <div class="d-flex align-items-center py-2" @click="
-                        scrollToHeight(2300),
-                        (mobileoptionvisible = false)
+                        scrollToHeight(9300)
+
                         ">
                         <div>
                             <!-- <img src="@/assets/Img/icons/settingimg.svg" class="header-images" /> -->
                         </div>
                         <p class="menu-txt">Careers</p>
                     </div>
-                    <div class="d-flex align-items-center py-2" @click="
-                        scrollToBottom,
-                        (mobileoptionvisible = false)
+                    <div class="d-flex align-items-center py-2" @click="scrollToBottom
+
                         ">
                         <div>
                             <!-- <img src="@/assets/Img/icons/settingimg.svg" class="header-images" /> -->
@@ -85,7 +73,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, onUnmounted } from 'vue'
+import { defineComponent, ref, onUnmounted, onMounted, watch } from 'vue'
 import { RouterLink, RouterView, useRouter, useRoute } from 'vue-router'
 
 export default defineComponent({
@@ -117,17 +105,20 @@ export default defineComponent({
             if (scrollableElement.value) {
                 scrollableElement.value.scrollTop = scrollableElement.value.scrollHeight;
             }
+            mobileoptionvisible.value = false
+
         };
         const scrollToHeight = (height) => {
             router.push({
                 path: '/'
             })
             // alert(JSON.stringify(route.path))
-            // if (route.path == '/') {
-            //     if (scrollableElement.value) {
-            //         scrollableElement.value.scrollTop = height;
-            //     }
-            // }
+            if (route.path == '/') {
+                if (scrollableElement.value) {
+                    scrollableElement.value.scrollTop = height;
+                }
+            }
+            mobileoptionvisible.value = false
 
         };
         onUnmounted(() => {
@@ -138,8 +129,52 @@ export default defineComponent({
                 }
             }
         })
+        onMounted(() => {
+            // alert('s')
+            if (scrollableElement.value) {
+                scrollableElement.value.scrollTop = 0;
+            }
+        });
 
+        const scrollTop = () => {
+            // if (scrollableElement.value) {
+            //     scrollableElement.value.scrollTop = scrollableElement.value.scrollHeight;
+            // }
+            // mobileoptionvisible.value = false
+            router.push({ path: '/' })
+            if (scrollableElement.value) {
+                scrollableElement.value.scrollTop = 0;
+            }
+            mobileoptionvisible.value = false
+
+        };
+        const scrollTopproject = () => {
+            // if (scrollableElement.value) {
+            //     scrollableElement.value.scrollTop = scrollableElement.value.scrollHeight;
+            // }
+            // mobileoptionvisible.value = false
+            router.push({ path: '/Project' })
+            if (scrollableElement.value) {
+                scrollableElement.value.scrollTop = 0;
+            }
+            mobileoptionvisible.value = false
+
+        };
+        watch(
+            () => route.path,
+            (newVal) => {
+                // alert('2')
+                if (scrollableElement.value) {
+                    scrollableElement.value.scrollTop = 0;
+                }
+                // LoadStore()
+            }
+
+        );
         return {
+            scrollTopproject,
+            scrollTop,
+
             scrollToHeight,
             scrollableElement,
             scrollToBottom,
@@ -409,7 +444,7 @@ export default defineComponent({
     font-weight: 600;
     // line-height: 28.13px;
     text-align: left;
-
+    cursor: pointer;
 
 }
 
