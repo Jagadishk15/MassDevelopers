@@ -400,10 +400,15 @@ export default defineComponent({
         });
 
         const images = [
-            '@/assets/Img/images/image93.svg',
-            '@/assets/Img/images/image94.svg',
-            '@/assets/Img/images/image91.svg',
-            '@/assets/Img/images/image911.svg'
+            new URL('@/assets/Img/images/image93.svg', import.meta.url).href,
+            new URL('@/assets/Img/images/image94.svg', import.meta.url).href,
+            new URL('@/assets/Img/images/image91.svg', import.meta.url).href,
+            new URL('@/assets/Img/images/image911.svg', import.meta.url).href,
+
+            // '@/assets/Img/images/image93.svg',
+            // '@/assets/Img/images/image94.svg',
+            // '@/assets/Img/images/image91.svg',
+            // '@/assets/Img/images/image911.svg'
         ];
 
         const imageSrcs = computed(() =>

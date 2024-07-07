@@ -39,20 +39,19 @@
             <div class="img-align mb-5">
                 <div class="imgrows">
                     <div class="column">
-                        <img src="@/assets/Img/images/image98.png" style="width:100%">
+                        <img src="@/assets/Img/images/image145.svg" style="width:50%;float: inline-end">
 
-                        <img src="@/assets/Img/images/image75.png" style="width:100%">
+                        <img src="@/assets/Img/images/image1251.svg" style="width:100%">
 
                     </div>
                     <div class="column">
-                        <img src="@/assets/Img/images/image751.png" style="width:75%">
-                        <img src="@/assets/Img/images/image101.png" style="width:75%">
-                        <img src="@/assets/Img/images/image103.png" style="width:80%">
-                        <img src="@/assets/Img/images/image102.png" style="width:100%">
+                        <img src="@/assets/Img/images/image1401.svg" style="width:100%">
+                        <img src="@/assets/Img/images/image1441.svg" style="width:100%">
+                        <img src="@/assets/Img/images/image1431.svg" style="width:100%">
                     </div>
                     <div class="column">
-                        <img src="@/assets/Img/images/image99.png" style="width:70%">
-                        <img src="@/assets/Img/images/image100.svg" style="width:70%">
+                        <img src="@/assets/Img/images/image1410.svg" style="width:100%">
+                        <img src="@/assets/Img/images/image1390.svg" style="width:100%">
                     </div>
 
                 </div>
@@ -81,18 +80,17 @@
             <div class="img-align mb-5">
                 <div class="imgrows">
                     <div class="column">
-                        <img src="@/assets/Img/images/image751.png" style="width:75%">
-                        <img src="@/assets/Img/images/image101.png" style="width:75%">
+                        <img src="@/assets/Img/images/image1461.svg" style="width:80%;float: inline-end">
 
                     </div>
                     <div class="column">
-                        <img src="@/assets/Img/images/image751.png" style="width:75%">
-                        <img src="@/assets/Img/images/image101.png" style="width:75%">
+                        <img src="@/assets/Img/images/image1471.svg" style="width:100%">
+                        <img src="@/assets/Img/images/image1501.svg" style="width:100%">
 
                     </div>
                     <div class="column">
-                        <img src="@/assets/Img/images/image751.png" style="width:75%">
-                        <img src="@/assets/Img/images/image101.png" style="width:75%">
+                        <img src="@/assets/Img/images/image1491.svg" style="width:60%">
+                        <img src="@/assets/Img/images/image1481.svg" style="width:70%">
                     </div>
 
                 </div>
@@ -129,7 +127,7 @@
 
                         <div class="img-align mb-5">
                             <div class="imgrows">
-                                <div class="column">
+                                <!-- <div class="column">
                                     <img src="@/assets/Img/images/image1522.svg" style="width:100%">
 
                                     <img src="@/assets/Img/images/image1533.svg" style="width:100%">
@@ -138,6 +136,19 @@
 
                                 <div class="column">
                                     <img src="@/assets/Img/images/image1544.svg" style="width:70%">
+                                </div> -->
+
+                                <div class="column">
+                                    <img src="@/assets/Img/images/image1522.svg" style="width:100%;margin-bottom:60px">
+
+                                    <img src="@/assets/Img/images/image1533.svg" style="width:100%;margin-top:60px">
+
+                                </div>
+                                <div class="column" style="
+    align-content: center;
+">
+                                    <img src="@/assets/Img/images/image1544.svg"
+                                        style="width:100%;float: inline-start;">
                                 </div>
 
                             </div>
@@ -166,13 +177,16 @@
 
                         <div class="img-align mb-5">
                             <div class="imgrows">
-                                <div class="column">
-                                    <img src="@/assets/Img/images/image1555.svg" style="width:70%">
+                                <div class="column" style="
+    align-content: center;
+">
+                                    <img src="@/assets/Img/images/image1555.svg"
+                                        style="width:100%;float: inline-start;">
                                 </div>
                                 <div class="column">
-                                    <img src="@/assets/Img/images/image1566.svg" style="width:100%">
+                                    <img src="@/assets/Img/images/image1566.svg" style="width:100%;margin-bottom:60px">
 
-                                    <img src="@/assets/Img/images/image1577.svg" style="width:100%">
+                                    <img src="@/assets/Img/images/image1577.svg" style="width:100%;margin-top:60px">
 
                                 </div>
 
@@ -236,20 +250,17 @@
             <div class="img-align mb-5">
                 <div class="imgrows">
                     <div class="column">
-                        <img src="@/assets/Img/images/image98.png" style="width:100%">
-
-                        <img src="@/assets/Img/images/image75.png" style="width:100%">
+                        <img src="@/assets/Img/images/image1601.svg" style="width:100%">
+                        <img src="@/assets/Img/images/image162.svg" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="@/assets/Img/images/image159.svg" style="width:90%">
+                        <img src="@/assets/Img/images/image164.svg" style="width:90%">
 
                     </div>
                     <div class="column">
-                        <img src="@/assets/Img/images/image751.png" style="width:75%">
-                        <img src="@/assets/Img/images/image101.png" style="width:75%">
-                        <img src="@/assets/Img/images/image103.png" style="width:80%">
-                        <img src="@/assets/Img/images/image102.png" style="width:100%">
-                    </div>
-                    <div class="column">
-                        <img src="@/assets/Img/images/image99.png" style="width:70%">
-                        <img src="@/assets/Img/images/image100.svg" style="width:70%">
+                        <img src="@/assets/Img/images/image1611.svg" style="width:100%;float: inline-start;">
+                        <img src="@/assets/Img/images/image1631.svg" style="width:100%;float: inline-start;">
                     </div>
 
                 </div>
