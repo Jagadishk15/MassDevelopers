@@ -276,21 +276,21 @@
 
                             <b-col cols='8' sm="8" md="3" lg="2">
                                 <div class="field">
-                                    <TextField type="text" :rules="{ required: true }" :required-icon="true"
-                                        name="Email" id="Email" label="Email address" />
+                                    <TextField type="text" :rules="{ required: true }" :required-icon="true" name="Name"
+                                        id="Name" label="Name" />
                                 </div>
                             </b-col>
                             <b-col cols='8' sm="8" md="3" lg="2">
                                 <div class="field">
                                     <TextField type="text" :rules="{ required: true }" :required-icon="true"
-                                        name="Email" id="Email" label="Email address" />
+                                        name="PhoneNo" id="PhoneNo" label="Phone No" />
                                 </div>
                             </b-col>
                             <b-col cols='8' sm="8" md="3" lg="2">
                                 <div class="customd">
                                     <div class="field">
-                                        <Dropdown type="text" :rules="{ required: true }" :required-icon="true"
-                                            name="Email" id="Email" label="Email address" />
+                                        <Dropdown  :rules="{ required: true }" :required-icon="true"
+                                            name="Type" id="Type" label="Type" />
                                     </div>
                                 </div>
                             </b-col>
