@@ -290,17 +290,9 @@ app.component("TreeTable", TreeTable);
 app.component("TriStateCheckbox", TriStateCheckbox);
 app.component("VirtualScroller", VirtualScroller);
 app.component("Editor", Editor);
-import '@mdi/font/css/materialdesignicons.css'
-import 'vuetify/styles'
-import { createVuetify } from 'vuetify'
-import * as components from 'vuetify/components'
-import * as directives from 'vuetify/directives'
 
-const vuetify = createVuetify({
-  components,
-  directives
-})
-app.use(vuetify);
+
+
 app.use(naive);
 
 app.mount("#app");

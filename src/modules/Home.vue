@@ -275,21 +275,27 @@
                         <b-row class="form-align">
 
                             <b-col cols='8' sm="8" md="3" lg="2">
-                                <div class="field">
-                                    <TextField type="text" :rules="{ required: true }" :required-icon="true" name="Name"
-                                        id="Name" label="Name" />
+                                <div class="customd">
+
+                                    <div class="field">
+                                        <TextField type="text" :rules="{ required: false }" :required-icon="true"
+                                            name="Name" id="Name" label="Name" />
+                                    </div>
                                 </div>
                             </b-col>
                             <b-col cols='8' sm="8" md="3" lg="2">
-                                <div class="field">
-                                    <TextField type="text" :rules="{ required: true }" :required-icon="true"
-                                        name="PhoneNo" id="PhoneNo" label="Phone No" />
+                                <div class="customd">
+
+                                    <div class="field">
+                                        <TextField type="text" :rules="{ required: false }" :required-icon="true"
+                                            name="PhoneNo" id="PhoneNo" label="Phone No" />
+                                    </div>
                                 </div>
                             </b-col>
                             <b-col cols='8' sm="8" md="3" lg="2">
                                 <div class="customd">
                                     <div class="field">
-                                        <Dropdown  :rules="{ required: true }" :required-icon="true"
+                                        <Dropdown :rules="{ required: false }" :required-icon="true" :items="typefild"
                                             name="Type" id="Type" label="Type" />
                                     </div>
                                 </div>
@@ -343,6 +349,18 @@ export default defineComponent({
     setup() {
         const products = ref();
         const router = useRouter();
+        let typefild = [
+            {
+                value: "Commercial",
+                name: "Commercial",
+            },
+            {
+                value: "Residential",
+                name: "Residential",
+            },
+
+        ];
+
         const responsiveOptions = ref([
             {
                 breakpoint: '1400px',
@@ -428,6 +446,7 @@ export default defineComponent({
         };
 
         return {
+            typefild,
             scrollTop,
             imageSrcs,
             routetopage,
@@ -445,8 +464,17 @@ export default defineComponent({
 
 }
 
+.customd .p-dropdown .p-dropdown-label {
+    color: white;
+}
+
 .customd .field .p-dropdown {
     border: 2px solid white !important;
+}
+
+.customd .field .p-inputtext {
+
+    color: white;
 }
 
 .p-divider.p-divider-horizontal {

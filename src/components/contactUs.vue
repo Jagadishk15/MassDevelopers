@@ -18,41 +18,50 @@
                             <div class="alignf my-5">
                                 <b-col cols='10' sm="10" lg="6" class="m-2">
                                     <div class="label-d-none label">
-                                        <TextField type="text" :rules="{ required: true }" :required-icon="true"
-                                            placeholder="Name" name="Name" id="Name" label="Email address" />
+                                        <TextField type="text" :rules="{ required: false }" :required-icon="false"
+                                            v-model="isForm.name" placeholder="Name" name="Name" id="Name"
+                                            label="Name" />
                                     </div>
                                 </b-col>
                                 <b-col cols='10' sm="10" lg="6" class="m-2">
                                     <div class="label-d-none label">
-                                        <TextField type="text" :rules="{ required: true }" :required-icon="true"
-                                            placeholder="Phone Number" name="Number" id="Number"
-                                            label="Email address" />
+                                        <TextField type="text" :rules="{ required: false }" :required-icon="false"
+                                            v-model="isForm.phone" placeholder="Phone Number" name="Number" id="Number"
+                                            label="Phone Number" />
                                     </div>
                                 </b-col>
                             </div>
                             <div class="alignf  my-5">
                                 <b-col cols='10' sm="10" lg="12" class="m-2">
-                                    <div class="label-d-none label">
-                                        <TextField type="text" :rules="{ required: true }" :required-icon="true"
-                                            placeholder="Email Id" name="Email" id="Email" label="Email address" />
+                                    <div class="label-d-none label customd">
+                                        <TextField type="text" :rules="{ required: false }" :required-icon="false"
+                                            v-model="isForm.mail" placeholder="Email Id" name="Email" id="Email"
+                                            label="Email address" />
                                     </div>
                                 </b-col>
 
                             </div>
                             <div class="alignf  my-5">
                                 <b-col cols='10' sm="10" lg="12" class="m-2">
-                                    <div class="label-d-none label">
-                                        <TextArea type="text" :rules="{ required: true }" :required-icon="true"
-                                            name="Description" placeholder="Description" :rows="6" id="Description"
-                                            label="Email address" />
+                                    <div class="dec">
+
+                                        <div class="label-d-none label">
+                                            <TextArea type="text" :rules="{ required: false }" :required-icon="false"
+                                                name="Description" placeholder="Description" :rows="6" id="Description"
+                                                v-model="isForm.des" label="" />
+                                        </div>
                                     </div>
                                 </b-col>
 
                             </div>
                             <div class="submitbtnalign">
-                                <div class="subbtn">
-                                    <p>Submit</p>
-                                </div>
+
+                                <b-button type="submit" class="mt-4">
+                                    <div class="subbtn" type="submit">
+                                        <p>Submit</p>
+
+                                    </div>
+                                </b-button>
 
                             </div>
 
@@ -233,6 +242,15 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+.dec .label-d-none label .p-inputtextarea-resizable {
+    color: white;
+}
+
+.p-inputtext {
+
+    color: white !important;
+}
+
 .logoalign {
     display: flex;
     align-items: center;
@@ -425,5 +443,20 @@ export default defineComponent({
         height: 1400px;
         background-color: #7E7A7A99;
     }
+}
+
+.p-button {
+    background: transparent;
+    border: transparent;
+}
+
+.p-button:enabled:active {
+    background: transparent;
+    border: transparent;
+}
+
+.p-button:enabled:hover {
+    background: transparent;
+    border: transparent;
 }
 </style>

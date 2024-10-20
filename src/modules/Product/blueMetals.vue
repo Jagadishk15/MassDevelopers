@@ -78,20 +78,20 @@
                     <b-row class="servicefield  my-5">
                         <b-col cols='10' sm="10" md="3" lg="3" class="m-2">
                             <div class="label-d-none label">
-                                <TextField type="text" v-model="isForm.name" :rules="{ required: true }"
+                                <TextField type="text" v-model="isForm.name" :rules="{ required: false }"
                                     :required-icon="true" placeholder="Name" name="Name" id="Name" label="Name" />
                             </div>
                         </b-col>
                         <b-col cols='10' sm="10" md="3" lg="3" class="m-2">
                             <div class="label-d-none label">
-                                <TextField type="text" v-model="isForm.phone" :rules="{ required: true }"
+                                <TextField type="text" v-model="isForm.phone" :rules="{ required: false }"
                                     :required-icon="true" placeholder="Phone No" name="Phone No" id="Phone No"
                                     label="Phone No" />
                             </div>
                         </b-col>
                         <b-col cols='10' sm="10" md="3" lg="3" class="m-2">
                             <div class="label-d-none label">
-                                <TextField type="text" v-model="isForm.mail" :rules="{ required: true }"
+                                <TextField type="text" v-model="isForm.mail" :rules="{ required: false }"
                                     :required-icon="true" placeholder="Email Id" name="Email" id="Email"
                                     label="Email address" />
                             </div>
@@ -103,19 +103,19 @@
                         <b-col cols='10' sm="10" md="3" lg="3" class="m-2">
                             <div class="spl">
                                 <div class="label-d-none label">
-                                    <Dropdown type="text" v-model="isForm.product" :rules="{ required: true }"
+                                    <Dropdown type="text" v-model="isForm.product" :rules="{ required: false }"
                                         :items="productitem" placeholder="products" :required-icon="true"
                                         name="products" id="products" label="products" />
                                 </div>
                             </div>
                             <div class="label-d-none label mt-5">
-                                <TextField type="text" v-model="isForm.sqft" :rules="{ required: true }"
+                                <TextField type="text" v-model="isForm.sqft" :rules="{ required: false }"
                                     :required-icon="true" placeholder="sqft" name="sqft" id="sqft" label="sqft" />
                             </div>
                         </b-col>
                         <b-col cols='10' sm="10" md="4" lg="3" class="m-2">
                             <div class="label-d-none label">
-                                <TextArea type="text" v-model="isForm.des" :rules="{ required: true }"
+                                <TextArea type="text" v-model="isForm.des" :rules="{ required: false }"
                                     :required-icon="true" name="Description" placeholder="Description" :rows="6"
                                     id="Description" label="Description" />
                             </div>
@@ -327,7 +327,6 @@ export default defineComponent({
     justify-content: center;
 
     .enqsubbtn {
-        margin-top: 19px;
         border: 2px solid #181737;
         padding: 8px 39px;
         background-color: transparent;
