@@ -28,26 +28,26 @@
                 <div class="contain1"></div>
             </div>
             <div class="aligntxtc my-5 py-5" style="text-align: center;">
-                <b-row align-h="start my-5">
+                <b-row align-h="start" class="my-5">
                     <b-col cols="4">Strength and Durability</b-col>
                 </b-row>
-                <b-row align-h="center my-5">
+                <b-row align-h="center" class="my-5">
                     <b-col cols="4"> Resistance to Wear and Erosion</b-col>
                 </b-row>
-                <b-row align-h="around my-5">
+                <b-row align-h="around" class="my-5">
                     <b-col cols="4">Stability in Construction Projects</b-col>
                     <b-col cols="4">High Load-Bearing Capacity</b-col>
                 </b-row>
-                <b-row align-h="center my-5">
+                <b-row align-h="center" class="my-5">
                     <b-col cols="4"> Good Drainage Properties</b-col>
                 </b-row>
-                <b-row align-h="start my-5">
+                <b-row align-h="start" class="my-5">
                     <b-col cols="4"> Environmentally Friendly</b-col>
                 </b-row>
-                <b-row align-h="center my-5">
+                <b-row align-h="center" class="my-5">
                     <b-col cols="4">Cost-Effective</b-col>
                 </b-row>
-                <b-row align-h="between my-5">
+                <b-row align-h="between" class="my-5">
                     <b-col cols="4">Versatility</b-col>
                     <b-col cols="4">Aesthetic Appeal</b-col>
                 </b-row>
@@ -142,6 +142,7 @@
 
     </div>
     <contactUS />
+    <Toast />
 
 </template>
 
@@ -199,7 +200,7 @@ export default defineComponent({
             "phone": "",
             "mail": "",
             "des": "",
-            "title": "",
+            "title": "Blue Metals",
             "product": ref(),
             "sqft": ""
         })
@@ -235,12 +236,28 @@ export default defineComponent({
                 result = await commonService.form4(isForm.value);
                 // msg = result["ErrorInfo"].ErrorCode;
                 debugger
-                toast.add({
-                    severity: "success",
-                    summary: "Mail Sent",
-                    detail: "",
-                    life: 3000,
-                });
+                if (result['result'] == true) {
+
+
+
+                    toast.add({
+                        severity: "success",
+                        summary: "Mail Sent",
+                        detail: "Successfully sent",
+                        life: 3000,
+                    });
+                    // resetForm()
+
+                    isForm.value = {
+                        "name": "",
+                        "phone": "",
+                        "mail": "",
+                        "des": "",
+                        "title": "Blue Metals",
+                        "product": ref(),
+                        "sqft": ""
+                    };
+                }
                 // if (result["result"] == "Already" && msg == null) {
                 //     existname.value = "Vaccination Name"
                 //     alreadyExistPop.value = true;

@@ -2,9 +2,12 @@ import baseURL from "../common/axios";
 class commonService {
 
     // file upload All filesapi call
-    form1fileupload(formdata) {
+    form1fileupload(title, file) {
         debugger;
-        return baseURL.httpbaseURL.post("form-1/", formdata, {
+        const formData = new FormData();
+        formData.append('title', title); // Add the title parameter
+        formData.append('data', file);
+        return baseURL.httpbaseURL.post("form-1", formData, {
             headers: {
                 "Content-Type": "multipart/form-data",
             },

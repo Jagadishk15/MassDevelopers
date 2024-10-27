@@ -154,7 +154,7 @@ export default defineComponent({
                 numScroll: 1
             }
         ]);
-        const { handleSubmit } = useForm();
+        const { handleSubmit, resetForm } = useForm();
         const toast = useToast();
 
         const isForm = ref({
@@ -162,9 +162,9 @@ export default defineComponent({
             "phone": "",
             "mail": "",
             "des": "",
-            "title": "",
-            "product": ref(),
-            "sqft": ""
+            "title": "Contact US",
+            // "product": ref(),
+            // "sqft": ""
         })
 
         let productitem = [
@@ -210,15 +210,31 @@ export default defineComponent({
                 // alert('e')
                 debugger;
 
-                result = await commonService.form4(isForm.value);
+                result = await commonService.form3(isForm.value);
                 // msg = result["ErrorInfo"].ErrorCode;
                 debugger
-                toast.add({
-                    severity: "success",
-                    summary: "Mail Sent",
-                    detail: "",
-                    life: 3000,
-                });
+                if (result['result'] == true) {
+
+
+
+                    toast.add({
+                        severity: "success",
+                        summary: "Mail Sent",
+                        detail: "Successfully sent",
+                        life: 3000,
+                    });
+                    // resetForm()
+
+                    isForm.value = {
+                        name: "",
+                        phone: "",
+                        mail: "",
+                        des: "",
+                        title: "Contact US",
+                        // product: null,
+                        // sqft: ""
+                    };
+                }
                 // if (result["result"] == "Already" && msg == null) {
                 //     existname.value = "Vaccination Name"
                 //     alreadyExistPop.value = true;

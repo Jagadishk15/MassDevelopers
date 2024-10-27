@@ -109,6 +109,7 @@
 
     </div>
     <contactUS />
+    <Toast />
 
 </template>
 
@@ -166,7 +167,7 @@ export default defineComponent({
             "phone": "",
             "mail": "",
             "des": "",
-            "title": "",
+            "title": "MSand",
             "product": ref(),
             "sqft": ""
         })
@@ -217,12 +218,28 @@ export default defineComponent({
                 result = await commonService.form4(isForm.value);
                 // msg = result["ErrorInfo"].ErrorCode;
                 debugger
-                toast.add({
-                    severity: "success",
-                    summary: "Mail Sent",
-                    detail: "",
-                    life: 3000,
-                });
+                if (result['result'] == true) {
+
+
+
+                    toast.add({
+                        severity: "success",
+                        summary: "Mail Sent",
+                        detail: "Successfully sent",
+                        life: 3000,
+                    });
+                    // resetForm()
+
+                    isForm.value = {
+                        "name": "",
+                        "phone": "",
+                        "mail": "",
+                        "des": "",
+                        "title": "MSand",
+                        "product": ref(),
+                        "sqft": ""
+                    };
+                }
                 // if (result["result"] == "Already" && msg == null) {
                 //     existname.value = "Vaccination Name"
                 //     alreadyExistPop.value = true;

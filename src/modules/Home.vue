@@ -239,7 +239,8 @@
                         <div class="w-100">
                             <p class="ml-3 txt-title">Careers</p>
                             <Divider type="solid" />
-                            <div class="resumebtn mt-1">
+                            <div class="resumebtn mt-1" @click="resumeClick()">
+                                <input ref="fileInput" type="file" @change="handleFileUpload" style="display: none" />
                                 <p>Resume</p>
                             </div>
                         </div>
@@ -279,7 +280,7 @@
 
                                     <div class="field">
                                         <TextField type="text" :rules="{ required: false }" :required-icon="true"
-                                            name="Name" id="Name" label="Name" />
+                                            name="Name" id="Name" label="Name" v-model="isForm.name" />
                                     </div>
                                 </div>
                             </b-col>
@@ -288,7 +289,7 @@
 
                                     <div class="field">
                                         <TextField type="text" :rules="{ required: false }" :required-icon="true"
-                                            name="PhoneNo" id="PhoneNo" label="Phone No" />
+                                            name="PhoneNo" id="PhoneNo" label="Phone No" v-model="isForm.phone" />
                                     </div>
                                 </div>
                             </b-col>
@@ -296,13 +297,13 @@
                                 <div class="customd">
                                     <div class="field">
                                         <Dropdown :rules="{ required: false }" :required-icon="true" :items="typefild"
-                                            name="Type" id="Type" label="Type" />
+                                            name="Type" id="Type" label="Type" v-model="isForm.type" />
                                     </div>
                                 </div>
                             </b-col>
                         </b-row>
                         <div class="form-align">
-                            <div class="subbtn">
+                            <div class="subbtn" @click="isSubmit">
                                 <p>Enquiry</p>
                             </div>
 
@@ -321,6 +322,8 @@
     <section>
         <contactUS class="my-5" />
     </section>
+    <Toast />
+
 
 </template>
 
@@ -332,9 +335,12 @@ import contactUS from '@/components/contactUs.vue'
 import { RouterLink, RouterView, useRouter, useRoute } from 'vue-router'
 import TextField from '@/components/FormComponents/TextInput.vue';
 import Dropdown from '@/components/FormComponents/Dropdown.vue';
-
+import commonService from '@/Services/commonService'
 import TextArea from '@/components/FormComponents/TextArea.vue';
 import { required } from '@vee-validate/rules';
+import { useToast } from "primevue/usetoast";
+
+import { useForm, validate } from 'vee-validate';
 
 
 export default defineComponent({
@@ -348,6 +354,8 @@ export default defineComponent({
     },
     setup() {
         const products = ref();
+        const toast = useToast();
+
         const router = useRouter();
         let typefild = [
             {
@@ -405,6 +413,49 @@ export default defineComponent({
                 route: 'transportation'
             }
         ]);
+        const selectedFile = ref();
+        const fileInput = ref();
+        const handleFileUpload = async (event) => {
+            selectedFile.value = event.target.files[0];
+
+
+            const title = 'resume';
+
+            try {
+                // const response = await uploadFile();
+
+                const response = await commonService.form1fileupload(title, selectedFile.value)
+
+                // console.log('File uploaded successfully:', response?.data);
+                if (response['result'] == true) {
+                    toast.add({
+                        severity: "success",
+                        summary: "Mail Sent",
+                        detail: "",
+                        life: 3000,
+                    });
+                    selectedFile.value = ref()
+                    fileInput.value = ref()
+
+
+                }
+
+            } catch (error) {
+                console.error('Error uploading file:', error);
+            }
+        };
+
+        async function resumeClick() {
+            fileInput.value.click();
+
+            // if (!selectedFile.value) {
+            //     alert("Please select a file first.");
+            //     return;
+            // }
+
+            // Define the title parameter
+
+        }
         const routetopage = (routes) => {
             scrollTop()
 
@@ -444,8 +495,67 @@ export default defineComponent({
             }
 
         };
+        const { handleSubmit, resetForm } = useForm();
+
+        const isForm = ref({
+            "name": "",
+            "phone": "",
+            "title": "Enquiry",
+            "type": ref(),
+            // "sqft": ""
+        })
+        const isSubmit = handleSubmit(async (values) => {
+            try {
+                let result: any;
+                let msg = "";
+
+                // alert('e')
+                debugger;
+
+                result = await commonService.form2(isForm.value);
+                // msg = result["ErrorInfo"].ErrorCode;
+                debugger
+                if (result['result'] == true) {
+
+
+
+                    toast.add({
+                        severity: "success",
+                        summary: "Mail Sent",
+                        detail: "Successfully sent",
+                        life: 3000,
+                    });
+                    // resetForm()
+
+                    isForm.value = {
+                        name: "",
+                        phone: "",
+                        // mail: "",
+                        type: "",
+                        title: "Enquiry",
+                        // product: null,
+                        // sqft: ""
+                    };
+                }
+                // if (result["result"] == "Already" && msg == null) {
+                //     existname.value = "Vaccination Name"
+                //     alreadyExistPop.value = true;
+
+                // } else if (msg == null) {
+                //     successPop.value = true;
+                // }
+            } catch (error) {
+                alert(error);
+            }
+        });
+
 
         return {
+            isSubmit,
+            isForm,
+            fileInput,
+            handleFileUpload,
+            resumeClick,
             typefild,
             scrollTop,
             imageSrcs,
