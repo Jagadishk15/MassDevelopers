@@ -29,7 +29,7 @@
                         <img class="cbg" src="@/assets/Img/images/logo.svg">
                         <div class="logon">
                             <h1>MASS DEVELOPERS</h1>
-                            <p>We build your Dream</p>
+                            <p>Building Future</p>
                         </div>
 
                     </div>
@@ -393,20 +393,21 @@ export default defineComponent({
         ]);
         const servicelist = ref([
             {
-                title: 'Construction of Buildings and Roads',
-                image: new URL('@/assets/Img/images/Rectangle29.png', import.meta.url).href,
-                route: 'construction'
-            },
-            {
                 title: 'Architectural and Structural design',
                 image: new URL('@/assets/Img/images/Rectangle30.png', import.meta.url).href,
                 route: 'architectural'
             },
             {
-                title: 'Coordination with PMC and Vendors',
-                image: new URL('@/assets/Img/images/Rectangle31.png', import.meta.url).href,
-                route: 'vendors'
+                title: 'Construction of Buildings and Roads',
+                image: new URL('@/assets/Img/images/Rectangle29.png', import.meta.url).href,
+                route: 'construction'
             },
+
+            // {
+            //     title: 'Coordination with PMC and Vendors',
+            //     image: new URL('@/assets/Img/images/Rectangle31.png', import.meta.url).href,
+            //     route: 'vendors'
+            // },
             {
                 title: 'Transport Services',
                 image: new URL('@/assets/Img/images/transportservice.png', import.meta.url).href,
