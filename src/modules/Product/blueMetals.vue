@@ -143,7 +143,9 @@
     </div>
     <contactUS />
     <Toast />
-
+    <!-- <PopupImagesSelect v-if="showDialog == true" v-model:selected-item="productitem" @load="showDialog = false"
+        :showButton="true" :showDialog="showDialog" @close="showDialog = false" @loaderhide="loading = false"
+        @loadershow="loading = true" @image-selected="handleImageSelected" /> -->
 </template>
 
 <script lang="ts">
@@ -158,9 +160,11 @@ import commonService from "@/Services/commonService"
 
 import TextArea from '@/components/FormComponents/TextArea.vue';
 import { useToast } from "primevue/usetoast";
+import PopupImagesSelect from '@/components/popupImagesSelect.vue';
 
 export default defineComponent({
     components: {
+        PopupImagesSelect,
         Content,
         groupimage,
         contactUS,
@@ -207,22 +211,47 @@ export default defineComponent({
 
         let productitem = [
             {
-                value: "Solid Block - 4/6/8 inchs",
-                name: "Solid Block - 4/6/8 inchs",
-            },
-            {
-                value: "Hollow Blocks - 4/6/8 inchs",
-                name: "Hollow Blocks - 4/6/8 inchs",
-            },
-            {
-                value: "ACC Block - 4/6/8/9 inchs",
-                name: "ACC Block - 4/6/8/9 inchs",
-            },
-            {
-                value: "Porothem Bricks - 4/6/8 inchs",
-                name: "Porothem Bricks - 4/6/8 inchs",
-            },
+                value: "Blue Metals - 6mm",
+                name: "Blue Metals - 6mm",
+                url: new URL('@/assets/Img/images/grasspaver.jpeg', import.meta.url).href,
 
+            },
+            {
+                value: "Blue Metals - 12mm",
+                name: "Blue Metals - 12mm",
+                url: new URL('@/assets/Img/images/grasspaver.jpeg', import.meta.url).href,
+
+            },
+            {
+                value: "Blue Metals - 20mm",
+                name: "Blue Metals - 20mm",
+                url: new URL('@/assets/Img/images/grasspaver.jpeg', import.meta.url).href,
+
+            },
+            {
+                value: "Blue Metals - 40mm",
+                name: "Blue Metals - 40mm",
+                url: new URL('@/assets/Img/images/grasspaver.jpeg', import.meta.url).href,
+
+            },
+            {
+                value: "GSB",
+                name: "GSB",
+                url: new URL('@/assets/Img/images/grasspaver.jpeg', import.meta.url).href,
+
+            },
+            {
+                value: "WMM",
+                name: "WMM",
+                url: new URL('@/assets/Img/images/grasspaver.jpeg', import.meta.url).href,
+
+            },
+            {
+                value: "Dust",
+                name: "Dust",
+                url: new URL('@/assets/Img/images/grasspaver.jpeg', import.meta.url).href,
+
+            },
         ];
 
         const isSubmit = handleSubmit(async (values) => {
@@ -272,7 +301,27 @@ export default defineComponent({
         onMounted(() => {
             window.scrollTo(0, 0);
         });
+        const showDialog = ref(false);
+        let loading = ref(false);
+        function show() {
+
+            if (productitem.length != 0 && productitem.length != undefined) {
+                showDialog.value = true
+            }
+
+        }
+        function handleImageSelected({ image, index }) {
+            console.log('Selected image:', image);
+            isForm.value.product = image.name
+            console.log('Selected index:', index);
+            showDialog.value = false
+            // Handle the selected image data here
+        }
         return {
+            handleImageSelected,
+            show,
+            showDialog,
+            loading,
             productitem,
             isForm,
             isSubmit,
@@ -365,7 +414,7 @@ export default defineComponent({
     font-family: Open Sans Hebrew;
 
     // col col-4 {
-    //     background-color: #9747FF
+    //     background-color: #2932a6
     // }
 }
 
@@ -508,7 +557,7 @@ export default defineComponent({
     left: 3%;
     position: absolute;
     // bottom: 50%;
-    border: solid 4px #9747FF;
+    border: solid 4px #2932a6;
     height: 33px;
     width: 33px;
     rotate: 30deg;
@@ -519,7 +568,7 @@ export default defineComponent({
     right: 4%;
     position: absolute;
     // bottom: 50%;
-    border: solid 4px #9747FF;
+    border: solid 4px #2932a6;
     height: 33px;
     width: 33px;
     rotate: 30deg;

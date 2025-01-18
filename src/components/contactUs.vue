@@ -324,7 +324,7 @@ export default defineComponent({
 .subbtn {
     border: 1.5px solid white;
     padding: 10px 35px;
-    background-color: #9747FF;
+    background-color: #2932a6;
     cursor: pointer;
 
     p {

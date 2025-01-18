@@ -110,7 +110,9 @@
     </div>
     <contactUS />
     <Toast />
-
+    <!-- <PopupImagesSelect v-if="showDialog == true" v-model:selected-item="productitem" @load="showDialog = false"
+        :showButton="true" :showDialog="showDialog" @close="showDialog = false" @loaderhide="loading = false"
+        @loadershow="loading = true" @image-selected="handleImageSelected" /> -->
 </template>
 
 <script lang="ts">
@@ -125,10 +127,12 @@ import commonService from "@/Services/commonService"
 
 import TextArea from '@/components/FormComponents/TextArea.vue';
 import { useToast } from "primevue/usetoast";
+import PopupImagesSelect from '@/components/popupImagesSelect.vue';
 
 export default defineComponent({
     components: {
         Content,
+        PopupImagesSelect,
         groupimage,
         contactUS,
         TextField,
@@ -174,37 +178,17 @@ export default defineComponent({
 
         let productitem = [
             {
-                value: "Flexi Paver -60mm/80mm",
-                name: "Flexi Paver -60mm/80mm",
+                value: "M-Sand",
+                name: "M-Sand",
+                url: new URL('@/assets/Img/images/grasspaver.jpeg', import.meta.url).href,
+
             },
             {
-                value: "Zigzag Paver -60mm/80mm",
-                name: "Zigzag Paver -60mm/80mm",
+                value: "P-Sand",
+                name: "P-Sand",
+                url: new URL('@/assets/Img/images/grasspaver.jpeg', import.meta.url).href,
+
             },
-            {
-                value: "I Paver -60mm/80mm",
-                name: "I Paver -60mm/80mm",
-            },
-            {
-                value: "Ball Paver -60mm/80mm",
-                name: "Ball Paver -60mm/80mm",
-            },
-            {
-                value: "Grass Paver -60mm",
-                name: "Grass Paver -60mm",
-            },
-            {
-                value: "kerb Stone -100mm/150mm",
-                name: "kerb Stone -100mm/150mm",
-            },
-            {
-                value: "Square Paver -60mm",
-                name: "Square Paver -60mm",
-            },
-            {
-                value: "Brick Pattern Paver -60mm",
-                name: "Brick Pattern Paver -60mm",
-            }
         ];
 
         const isSubmit = handleSubmit(async (values) => {
@@ -254,7 +238,29 @@ export default defineComponent({
         onMounted(() => {
             window.scrollTo(0, 0);
         });
+        const showDialog = ref(false);
+        let loading = ref(false);
+        function show() {
+
+            if (productitem.length != 0 && productitem.length != undefined) {
+                showDialog.value = true
+            }
+
+        }
+        function handleImageSelected({ image, index }) {
+            console.log('Selected image:', image);
+            isForm.value.product = image.name
+            console.log('Selected index:', index);
+            showDialog.value = false
+            // Handle the selected image data here
+        }
         return {
+            handleImageSelected,
+            show,
+            showDialog,
+            loading,
+
+
             productitem,
             isForm,
             isSubmit,
@@ -504,7 +510,7 @@ export default defineComponent({
     left: 3%;
     position: absolute;
     // bottom: 50%;
-    border: solid 4px #9747FF;
+    border: solid 4px #2932a6;
     height: 33px;
     width: 33px;
     rotate: 30deg;
@@ -515,7 +521,7 @@ export default defineComponent({
     right: 4%;
     position: absolute;
     // bottom: 50%;
-    border: solid 4px #9747FF;
+    border: solid 4px #2932a6;
     height: 33px;
     width: 33px;
     rotate: 30deg;

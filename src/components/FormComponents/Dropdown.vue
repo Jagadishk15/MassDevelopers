@@ -1,7 +1,7 @@
 <template>
   <label path="storeid">{{ label }} <span class="red" v-if="requiredIcon">*</span></label>
   <Dropdown v-model="model" :type="type" :disabled="disabled" :filter="filter" :options="items" optionValue="value"
-    optionLabel="name" :key-field="valueField" :label-field="textField"
+    optionLabel="name" :key-field="valueField" :label-field="textField" @focus="$.emit('focus')"
     :class="{ 'p-invalid': errorMessages.length, styleclass }" @change="$.emit('change')" @update:model-value="input"
     :id="id" :showClear="showClear" class="w-full md:w-14rem" :placeholder="placeholder">
   </Dropdown>
@@ -139,6 +139,4 @@ export default defineComponent({
   width: 200px !important;
   border-radius: 30px !important;
 }
-
-
 </style>

@@ -63,7 +63,7 @@ export default defineComponent({
 //     font-family: Open Sans Hebrew;
 //     margin-top: 20px;
 //     font-size: 78px;
-//     color: #9747FF;
+//     color: #2932a6;
 //     // font-style: italic;
 //     font-weight: 600;
 //     // line-height: 28.13px;

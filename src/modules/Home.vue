@@ -2,9 +2,11 @@
     <div>
         <section>
             <div class="h-title">
-                <p class="c-name">Mass Developers</p>
+                <!-- <p class="c-name">Mass Developers</p> -->
+                <img src="@/assets/Img/images/massdeveloperlogoblue.jpeg">
 
             </div>
+            <!-- massdeveloperlogoblue -->
         </section>
 
         <b-container>
@@ -67,7 +69,7 @@
                                 path: '/paverblocks'
                             })">
                                 <div class="imgconatain">
-                                    <img class="Simg" src="@/assets/Img/images/image206.svg">
+                                    <img class="Simg" src="@/assets/Img/images/PaverBlocks.jpeg">
                                     <div class="service-align">
                                         <p class="stitle">Paver Blocks</p>
                                         <img class="navigate" src="@/assets/Img/images/image38.png">
@@ -79,7 +81,7 @@
                                 path: '/blueMetals'
                             })">
                                 <div class="imgconatain">
-                                    <img class="Simg" src="@/assets/Img/images/image206.svg">
+                                    <img class="Simg" src="@/assets/Img/images/bluemetal.jpeg">
                                     <div class="service-align">
                                         <p class="stitle">Blue Metal</p>
                                         <img class="navigate" src="@/assets/Img/images/image38.png">
@@ -93,7 +95,7 @@
                                 path: '/mSand'
                             })">
                                 <div class="imgconatain">
-                                    <img class="Simg" src="@/assets/Img/images/image206.svg">
+                                    <img class="Simg" src="@/assets/Img/images/msand.jpeg">
                                     <div class="service-align">
                                         <p class="stitle">M Sand</p>
                                         <img class="navigate" src="@/assets/Img/images/image38.png">
@@ -597,7 +599,8 @@ export default defineComponent({
 .h-title {
     width: 100%;
     height: 350px;
-    background-color: #B086E7;
+    //background-color: #B086E7;
+    background-color: #f8f6f9;
     // text-align: center;
     display: flex;
     justify-content: center;
@@ -761,7 +764,7 @@ export default defineComponent({
         // padding: 0px 10%;
         font-weight: 700;
         font-size: 20px;
-        color: #9747FF;
+        color: #2932a6;
         font-family: Open Sans Hebrew;
         line-height: 39px;
     }
@@ -771,7 +774,7 @@ export default defineComponent({
 
     // position: absolute;
     // bottom: 50%;
-    border: solid 4px #9747FF;
+    border: solid 4px #2932a6;
     height: 33px;
     width: 33px;
     rotate: 30deg;

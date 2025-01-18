@@ -49,7 +49,7 @@
                     <b-col cols="4">Decorative Concrete Blocks</b-col>
                     <b-col cols="4">Retaining Wall Blocks</b-col>
                 </b-row>
-                <b-row align-h="end"  class="my-5">
+                <b-row align-h="end" class="my-5">
                     <b-col cols="4">Fly Ash Bricks</b-col>
                     <b-col cols="4">Lego Blocks (Modular Concrete Blocks)</b-col>
                 </b-row>
@@ -58,11 +58,11 @@
                     <b-col cols="4">Hollow Concrete Blocks</b-col>
                 </b-row>
 
-                <b-row align-h="end"  class="my-5">
+                <b-row align-h="end" class="my-5">
                     <b-col cols="4">Rammed Earth Blocks</b-col>
 
                 </b-row>
-                <b-row align-h="end"  class="my-5">
+                <b-row align-h="end" class="my-5">
                     <b-col cols="4">Concrete Bricks</b-col>
 
                 </b-row>
@@ -165,7 +165,9 @@
     </div>
     <contactUS />
     <Toast />
-
+    <PopupImagesSelect v-if="showDialog == true" v-model:selected-item="productitem" @load="showDialog = false"
+        :showButton="true" :showDialog="showDialog" @close="showDialog = false" @loaderhide="loading = false"
+        @loadershow="loading = true" @image-selected="handleImageSelected" />
 </template>
 
 <script lang="ts">
@@ -180,9 +182,11 @@ import commonService from "@/Services/commonService"
 
 import TextArea from '@/components/FormComponents/TextArea.vue';
 import { useToast } from "primevue/usetoast";
+import PopupImagesSelect from '@/components/popupImagesSelect.vue';
 
 export default defineComponent({
     components: {
+        PopupImagesSelect,
         Content,
         groupimage,
         contactUS,
@@ -231,18 +235,26 @@ export default defineComponent({
             {
                 value: "Solid Block - 4/6/8 inchs",
                 name: "Solid Block - 4/6/8 inchs",
+                url: new URL('@/assets/Img/images/grasspaver.jpeg', import.meta.url).href,
+
             },
             {
                 value: "Hollow Blocks - 4/6/8 inchs",
                 name: "Hollow Blocks - 4/6/8 inchs",
+                url: new URL('@/assets/Img/images/grasspaver.jpeg', import.meta.url).href,
+
             },
             {
                 value: "ACC Block - 4/6/8/9 inchs",
                 name: "ACC Block - 4/6/8/9 inchs",
+                url: new URL('@/assets/Img/images/grasspaver.jpeg', import.meta.url).href,
+
             },
             {
                 value: "Porothem Bricks - 4/6/8 inchs",
                 name: "Porothem Bricks - 4/6/8 inchs",
+                url: new URL('@/assets/Img/images/grasspaver.jpeg', import.meta.url).href,
+
             },
 
         ];
@@ -293,7 +305,27 @@ export default defineComponent({
         onMounted(() => {
             window.scrollTo(0, 0);
         });
+        const showDialog = ref(false);
+        let loading = ref(false);
+        function show() {
+
+            if (productitem.length != 0 && productitem.length != undefined) {
+                showDialog.value = true
+            }
+
+        }
+        function handleImageSelected({ image, index }) {
+            console.log('Selected image:', image);
+            isForm.value.product = image.name
+            console.log('Selected index:', index);
+            showDialog.value = false
+            // Handle the selected image data here
+        }
         return {
+            handleImageSelected,
+            show,
+            showDialog,
+            loading,
             productitem,
             isForm,
             isSubmit,
@@ -386,7 +418,7 @@ export default defineComponent({
     font-family: Open Sans Hebrew;
 
     // col col-4 {
-    //     background-color: #9747FF
+    //     background-color: #2932a6
     // }
 }
 
@@ -529,7 +561,7 @@ export default defineComponent({
     left: 3%;
     position: absolute;
     // bottom: 50%;
-    border: solid 4px #9747FF;
+    border: solid 4px #2932a6;
     height: 33px;
     width: 33px;
     rotate: 30deg;
@@ -540,7 +572,7 @@ export default defineComponent({
     right: 4%;
     position: absolute;
     // bottom: 50%;
-    border: solid 4px #9747FF;
+    border: solid 4px #2932a6;
     height: 33px;
     width: 33px;
     rotate: 30deg;

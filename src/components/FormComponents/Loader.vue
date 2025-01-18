@@ -1,7 +1,7 @@
 <template>
   <div v-if="loading" class="loader-container">
     <!-- <img src="@/assets/Gif/loadergif.gif" class="Loadergif" alt="Loading..." /> -->
-    <img src="@/assets/Gif/CRMLoader.gif" class="Loadergif" alt="Loading..." />
+    <!-- <img src="@/assets/Gif/CRMLoader.gif" class="Loadergif" alt="Loading..." /> -->
   </div>
 </template>
 
